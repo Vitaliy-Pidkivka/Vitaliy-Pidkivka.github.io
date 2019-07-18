@@ -461,30 +461,32 @@ body {
         main .about .information h3 {
           margin-bottom: 0;
           font-weight: 200; }
-        main .about .information .button .portfolio {
-          background-color: #e1512c;
-          height: 40px;
-          width: 98%;
-          border: none;
-          box-shadow: 0px 0px 10px black;
-          color: white;
-          font-weight: bold;
-          font-size: 14px; }
-        main .about .information .button .contact {
-          background-color: #fff;
-          box-sizing: border-box;
-          height: 40px;
-          width: 98%;
-          margin-top: 8px;
-          border: 3px solid #e1512c;
-          box-shadow: 0px 0px 10px black;
-          color: #e1512c;
-          font-weight: bold;
-          font-size: 14px;
-          margin-left: 0; }
-        main .about .information .button :hover {
-          opacity: 0.9;
-          transform: scale(1.05); }
+        main .about .information .button {
+          padding-right: 15px; }
+          main .about .information .button .portfolio {
+            background-color: #e1512c;
+            height: 40px;
+            width: 98%;
+            border: none;
+            box-shadow: 0px 0px 10px black;
+            color: white;
+            font-weight: bold;
+            font-size: 14px; }
+          main .about .information .button .contact {
+            background-color: #fff;
+            box-sizing: border-box;
+            height: 40px;
+            width: 98%;
+            margin-top: 8px;
+            border: 3px solid #e1512c;
+            box-shadow: 0px 0px 10px black;
+            color: #e1512c;
+            font-weight: bold;
+            font-size: 14px;
+            margin-left: 0; }
+          main .about .information .button :hover {
+            opacity: 0.9;
+            transform: scale(1.05); }
     main .education {
       padding-left: 20px;
       margin-top: 50px;
