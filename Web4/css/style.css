@@ -445,7 +445,8 @@ body {
       margin-left: 20px; }
       main .about .picture {
         display: inline-block;
-        padding-left: 32%; }
+        padding-left: 32%;
+        margin-left: 0; }
         main .about .picture img {
           position: relative;
           float: left; }
