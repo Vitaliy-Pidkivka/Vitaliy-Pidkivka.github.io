@@ -462,7 +462,7 @@ body {
           margin-bottom: 0;
           font-weight: 200; }
         main .about .information .button {
-          padding-right: 2px; }
+          padding-right: 0px; }
           main .about .information .button .portfolio {
             background-color: #e1512c;
             height: 40px;
