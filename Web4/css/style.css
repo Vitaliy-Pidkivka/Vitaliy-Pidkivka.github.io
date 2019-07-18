@@ -462,11 +462,11 @@ body {
           margin-bottom: 0;
           font-weight: 200; }
         main .about .information .button {
-          padding-right: 25px; }
+          padding-right: 0px; }
           main .about .information .button .portfolio {
             background-color: #e1512c;
             height: 40px;
-            width: 98%;
+            width: 100%;
             border: none;
             box-shadow: 0px 0px 10px black;
             color: white;
@@ -476,7 +476,7 @@ body {
             background-color: #fff;
             box-sizing: border-box;
             height: 40px;
-            width: 98%;
+            width: 100%;
             margin-top: 8px;
             border: 3px solid #e1512c;
             box-shadow: 0px 0px 10px black;
@@ -620,7 +620,7 @@ body {
         main .about .information p {
           padding-right: 30px; }
         main .about .information .button {
-          padding-right: 35px; }
+          padding-right: 15px; }
           main .about .information .button .portfolio {
             background-color: #e1512c;
             height: 40px;
