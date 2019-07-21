@@ -353,10 +353,10 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  width: 1700px;
 }
 .section-header .section-inner {
   height: 100vh;
-  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -400,6 +400,7 @@ body {
 .section-navigation {
   color: #fff;
   background-color: #252e30;
+  width: 1700px;
 }
 .section-navigation-wrapper {
   padding-top: 15px;
@@ -423,6 +424,9 @@ body {
   color: #2ecc71;
 }
 
+.section-about {
+  width: 1700px;
+}
 .section-about-wrapper__items {
   display: flex;
   justify-content: space-between;
@@ -430,10 +434,11 @@ body {
   margin-bottom: 100px;
 }
 .section-about-wrapper-info {
+  height: 755px;
   display: flex;
 }
 .section-about-wrapper-description {
-  padding: 100px 150px;
+  padding: 70px 150px;
   background-color: #f2f2f1;
   width: 100%;
 }

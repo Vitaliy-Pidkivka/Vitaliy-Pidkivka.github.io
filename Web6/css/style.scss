@@ -18,10 +18,10 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+    width: 1700px;
 
     .section-inner {
         height: 100vh;
-        position: relative;
         display: flex;
         flex-direction: column;
     }
@@ -78,6 +78,7 @@ body {
 .section-navigation {
     color: #fff;
     background-color: #252e30;
+    width: 1700px;
 
     &-wrapper {
         padding-top: 15px;
@@ -111,6 +112,7 @@ body {
 
 // === about ===
 .section-about {
+    width:1700px;
     &-wrapper {
         &__items {
             display: flex;
@@ -120,11 +122,12 @@ body {
         }
 
         &-info {
+            height: 755px;
             display: flex;
         }
 
         &-description {
-            padding: 100px 150px;
+            padding: 70px 150px;
             background-color: #f2f2f1;
             width: 100%;
         }
