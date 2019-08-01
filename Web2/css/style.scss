@@ -24,25 +24,126 @@
     align-items: center;
 }
 
+@keyframes headerLogo {
+
+
+    10% {
+        transform: scale(1.02)
+    }
+
+    20% {
+        transform: scale(1.04)
+    }
+
+    30% {
+        transform: scale(1.06)
+    }
+
+    40% {
+        transform: scale(1.08)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    60% {
+        transform: scale(1.08)
+    }
+
+    70% {
+        transform: scale(1.06)
+    }
+
+    80% {
+        transform: scale(1.04)
+    }
+
+    90% {
+        transform: scale(1.02)
+    }
+}
+
+@keyframes bannerDescription {
+    10% {
+        color: rgb(249, 240, 255)
+    }
+
+    15% {
+        color: rgb(245, 232, 253)
+    }
+
+    20% {
+        color: rgb(239, 220, 250)
+    }
+
+    25% {
+        color: rgb(235, 206, 252)
+    }
+
+    30% {
+        color: rgb(230, 191, 253)
+    }
+
+    40% {
+        color: rgb(225, 177, 253)
+    }
+
+    50% {
+        color: rgb(183, 144, 250)
+    }
+
+    55% {
+        color: rgb(193, 159, 253)
+    }
+
+    60% {
+        color: rgb(203, 173, 255)
+    }
+
+    70% {
+        color: rgb(210, 186, 250)
+    }
+
+    75% {
+        color: rgb(218, 200, 248)
+    }
+
+    80% {
+        color: rgb(226, 212, 248)
+    }
+
+    85% {
+        color: rgb(230, 219, 248)
+    }
+
+    90% {
+        color: rgb(234, 225, 248)
+    }
+
+    95% {
+        color: rgb(239, 232, 250)
+    }
+}
+
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-color: #fff;
     width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 20px 60px;
 }
 
 header {
     padding-top: 30px;
 
     .logo {
+
         img {
-            &:hover {
-                transform: scale(1.03);
-            }
+            animation: headerLogo 1.6s infinite ease-in-out;
         }
     }
+
 
     .navigation {
         display: flex;
@@ -92,6 +193,7 @@ header {
             text-transform: uppercase;
             text-shadow: 0px 0px 20px rgb(68, 67, 67);
             letter-spacing: 20px;
+            animation: bannerDescription 1.8s infinite ease-in-out;
         }
     }
 
@@ -464,6 +566,7 @@ header {
             text-transform: uppercase;
             list-style-type: none;
             margin-right: 35px;
+
             &:hover {
                 transform: scale(1.1);
             }
@@ -471,6 +574,7 @@ header {
             a {
                 text-decoration: none;
                 color: #000;
+
                 &:hover {
                     color: rgb(73, 72, 72);
                 }
@@ -641,6 +745,7 @@ footer {
             a {
                 text-decoration: none;
                 color: #000;
+
                 &:hover {
                     color: rgb(73, 72, 72);
                 }
