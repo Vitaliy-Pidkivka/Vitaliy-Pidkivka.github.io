@@ -97,5 +97,10 @@ function clear(id) {
 
 function backSpace() {
     let localDecimalMemory = display.innerHTML;
-    display.innerHTML = localDecimalMemory.substring(0, localDecimalMemory.length - 1);
+    if (display.innerHTML.length != '1') {
+        display.innerHTML = localDecimalMemory.substring(0, localDecimalMemory.length - 1);
+    } else if (display.innerHTML.length = '1') {
+        localDecimalMemory == '0';
+        display.innerHTML = localDecimalMemory;
+    }
 }
