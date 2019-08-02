@@ -84,6 +84,8 @@ body {
 
     }
 
+    
+    
 }
 
 @media only screen and (max-width:1280px) and (min-width:769px) {
@@ -176,6 +178,7 @@ body {
         margin-right: 2px;
         opacity: 0.9;
     }
+
 
 
 }
@@ -271,6 +274,15 @@ body {
         margin-right: 2px;
         opacity: 0.9;
 
+    }
+    .buttons_wrapper .box:active{
+        transform: scale(0.96);
+    }
+    .buttons_wrapper .box:hover{
+        cursor: pointer;
+        background-color: rgb(143, 143, 143);
+        border: 4px solid #fff;
+        box-shadow: 0 0 6px #fff; 
     }
 
 
