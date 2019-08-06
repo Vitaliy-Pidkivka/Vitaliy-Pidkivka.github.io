@@ -293,6 +293,7 @@ body {
         opacity: 0.9;
 
     }
+    
     .buttons_wrapper .box:active{
         transform: scale(0.96);
     }
