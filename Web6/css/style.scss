@@ -194,7 +194,7 @@ $screen-lg-max: 1199px;
             @media(min-width: $screen-md) {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: space-around;
                 padding: 50px 20px;
                 flex-grow: 1;
                 background-color: #f2f2f1;
@@ -207,7 +207,6 @@ $screen-lg-max: 1199px;
             
             @media(min-width: $screen-sm) {
                 display: flex;
-                margin-top: 40px;
                 
             }
 

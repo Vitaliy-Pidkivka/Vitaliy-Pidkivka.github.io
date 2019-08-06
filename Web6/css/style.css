@@ -490,7 +490,7 @@ body {
   .section-about-wrapper-description {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 50px 20px;
     flex-grow: 1;
     background-color: #f2f2f1;
@@ -500,7 +500,6 @@ body {
 @media (min-width: 576px) {
   .section-about-wrapper-areas {
     display: flex;
-    margin-top: 40px;
   }
 }
 @media (max-width: 575px) {
