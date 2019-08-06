@@ -171,6 +171,7 @@ $screen-lg-max: 1199px;
         }
 
         &-info {
+
             display: flex;
 
             @media(max-width: $screen-lg-max) {
@@ -190,15 +191,24 @@ $screen-lg-max: 1199px;
         }
 
         &-description {
-            padding: 50px 10px 0;
-            flex-grow: 1;
-            background-color: #f2f2f1;
+            @media(min-width: $screen-md) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 50px 20px;
+                flex-grow: 1;
+                background-color: #f2f2f1;
+                max-height: 41rem;
+            }
+
         }
 
         &-areas {
+            
             @media(min-width: $screen-sm) {
                 display: flex;
                 margin-top: 40px;
+                
             }
 
             @media(max-width: $screen-xs-max) {
@@ -215,6 +225,7 @@ $screen-lg-max: 1199px;
         @media(max-width: $screen-xs-max) {
             margin-bottom: 30px;
         }
+        
 
         &-title {
             color: #566366;
@@ -247,14 +258,22 @@ $screen-lg-max: 1199px;
     }
 
     &-areas-item {
-        margin-bottom: 50px;
-
+        
+        &:not(:last-child){
+            margin-bottom: 50px;
+        }
+        
         img {
             height: 50px;
         }
 
         @media(min-width: $screen-lg) {
-            padding-left: 50px;
+            padding-left: 58px;
+            position: relative;
+            img {
+                position: absolute;
+                left: 0;
+            }
         }
 
 
@@ -284,23 +303,25 @@ $screen-lg-max: 1199px;
     margin-bottom: 100px;
 
     &-wrapper {
-        
-        
+
+
         @media(min-width: $screen-sm) {
             display: flex;
             justify-content: space-between;
             padding-left: 50px;
+
             &-description {
                 max-width: 47%;
             }
         }
+
         @media(max-width: $screen-xs-max) {
             &-description {
-               text-align: center;
-               margin-bottom: 30px;
+                text-align: center;
+                margin-bottom: 30px;
             }
         }
-        
+
 
         &-items {
             min-width: 47%;
