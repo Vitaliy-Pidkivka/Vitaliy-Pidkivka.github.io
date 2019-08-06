@@ -312,7 +312,6 @@ $screen-lg-max: 1199px;
         @media(min-width: $screen-sm) {
             display: flex;
             justify-content: space-between;
-            padding-left: 50px;
 
             &-description {
                 max-width: 47%;
