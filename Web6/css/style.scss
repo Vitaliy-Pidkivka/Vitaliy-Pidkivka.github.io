@@ -167,6 +167,7 @@ $screen-lg-max: 1199px;
                 justify-content: space-between;
                 flex-direction: column;
                 margin-top: 30px;
+
             }
         }
 
@@ -191,13 +192,16 @@ $screen-lg-max: 1199px;
         }
 
         &-description {
+            background-color: #f2f2f1;
+            @media(max-width: $screen-sm-max) {
+                padding-top: 60px;
+            }
             @media(min-width: $screen-md) {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
                 padding: 50px 20px;
                 flex-grow: 1;
-                background-color: #f2f2f1;
                 max-height: 41rem;
             }
 
@@ -229,7 +233,7 @@ $screen-lg-max: 1199px;
         &-title {
             color: #566366;
             font-size: 30px;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             text-transform: uppercase;
             font-weight: bold;
         }
@@ -258,20 +262,21 @@ $screen-lg-max: 1199px;
 
     &-areas-item {
         
-        &:not(:last-child){
-            margin-bottom: 50px;
-        }
+        
         
         img {
             height: 50px;
         }
 
-        @media(min-width: $screen-lg) {
+        @media(min-width: $screen-xl) {
             padding-left: 58px;
             position: relative;
             img {
                 position: absolute;
                 left: 0;
+            }
+            &:not(:last-child){
+                margin-bottom: 50px;
             }
         }
 
@@ -298,7 +303,7 @@ $screen-lg-max: 1199px;
 // ===skills ===
 
 .section-skills {
-    margin-top: 100px;
+    margin-top: 60px;
     margin-bottom: 100px;
 
     &-wrapper {
