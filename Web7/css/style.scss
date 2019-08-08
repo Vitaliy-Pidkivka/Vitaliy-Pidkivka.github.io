@@ -1,0 +1,362 @@
+// === variables ===
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$screen-xs-max: 575px;
+$screen-sm-max: 767px;
+$screen-md-max: 991px;
+$screen-lg-max: 1199px;
+
+// === / variables ===
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: rgba(252, 252, 252, 0.932);
+    color: rgb(77, 76, 76);
+}
+
+.section-inner {
+    max-width: 68%;
+    display: inline-block;
+}
+
+.section-outer {
+    padding: 0 20px 0;
+}
+
+// === menu ===
+
+.section-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(77, 76, 76);
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    &-logo{
+        img{
+            display: none;
+        }
+    }
+    &-nav {
+        display: flex;
+        list-style: none;
+
+        &__text {
+
+            margin-left: 30px;
+
+            a {
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                text-decoration: none;
+                transition: .3s ease-in-out;
+                font-weight: 400;
+                font-size: 13px;
+                padding: 4px 8px;
+
+                &:hover {
+                    color: #fff;
+                    background-color: rgb(247, 10, 2);
+                    border-radius: 3px;
+                }
+            }
+
+        }
+    }
+}
+
+// === / menu ===
+
+
+// === about ===
+
+.section-about {
+    margin-top: 80px;
+
+    .section-inner {
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(117, 117, 117);
+    }
+
+    &-wrapper {}
+
+    &__img {
+        display: block;
+        margin-right: 20px;
+        float: left;
+
+        img {}
+    }
+
+    &-description {
+
+        &__title {
+            font-size: 30px;
+            letter-spacing: 0.5px;
+            font-weight: bold;
+        }
+
+        &__subtitle {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        &__text {
+            font-size: 17px;
+            margin-top: 20px;
+        }
+
+        &-buttons {
+            margin-top: 15px;
+
+
+            &__btn1,
+            &__btn2 {
+                display: inline-block;
+
+                a {
+
+                    display: inline-block;
+                    padding: 7px 20px;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: 700;
+                    letter-spacing: 0.5px;
+                    box-shadow: 0 0px 8px rgb(0, 0, 0);
+                    transition: 0.2s;
+
+                    &:hover {
+                        transform: scale(1.1)
+                    }
+                }
+            }
+
+            &__btn1 {
+                a {
+                    background-color: rgb(247, 10, 2);
+                    color: #fff;
+                    margin-right: 40px;
+                    min-width: 110px;
+                    line-height: 20px;
+                }
+
+            }
+
+            &__btn2 {
+                a {
+
+                    color: rgb(247, 10, 2);
+                    border: 3px solid rgb(247, 10, 2);
+                    background-color: #fff;
+                    min-width: 105px;
+                }
+            }
+        }
+    }
+
+}
+
+// === / about ===
+
+
+// === education ===
+
+.section-education {
+    &__title {
+        font-size: 30px;
+        color: rgb(247, 10, 2);
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &-item {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            font-weight: bold;
+            position: relative;
+            justify-content: space-between;
+
+            span {
+                position: absolute;
+                right: 0;
+                color: rgb(141, 141, 141);
+            }
+        }
+
+        &__subtitle {
+            margin-top: 10px;
+            color: rgb(141, 141, 141);
+            font-weight: bold;
+        }
+
+        &__text {
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.2;
+        }
+    }
+}
+
+// === / education ===
+
+
+// === aside ===
+
+.aside {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 20%;
+    padding-right: 50px;
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-contact {
+        &__title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        &-item {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+
+            &__text {
+                i {
+                    margin-right: 10px;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+                transition: 0.2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 15px;
+                    color: rgba(134, 133, 133, 0.932);
+
+
+                    &:hover {
+                        transform: scale(1.2);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    &-skills {
+        &__title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        &-item {
+            margin-top: 25px;
+
+            &__title {
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+                color: rgb(141, 141, 141);
+                font-weight: bold;
+            }
+
+            &__persents-html,
+            &__persents-css,
+            &__persents-js {
+                width: 100%;
+                height: 16px;
+                background-color: rgba(226, 226, 226, 0.9);
+                margin-bottom: 10px;
+                position: relative;
+                z-index: -2;
+                text-align: left;
+                color: #fff;
+
+                span {
+                    position: absolute;
+                    left: 46%;
+                    top: -1px;
+                    font-weight: bold;
+                }
+
+
+            }
+
+            &__persents-html {
+                &:before {
+                    content: "";
+                    background-color: rgb(247, 10, 2);
+                    width: 90%;
+                    height: 16px;
+                    position: absolute;
+                    z-index: -1;
+                }
+            }
+
+            &__persents-css {
+                &:before {
+                    content: "";
+                    background-color: rgb(247, 10, 2);
+                    width: 80%;
+                    height: 16px;
+                    position: absolute;
+                    z-index: -1;
+                }
+            }
+
+            &__persents-js {
+                &:before {
+                    content: "";
+                    background-color: rgb(247, 10, 2);
+                    width: 70%;
+                    height: 16px;
+                    position: absolute;
+                    z-index: -1;
+                }
+            }
+
+
+            &__text {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// === / aside ===
