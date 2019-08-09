@@ -25,12 +25,29 @@ body {
 }
 
 .section-inner {
-    max-width: 68%;
+    @media screen and (min-width: $screen-lg) {
+        max-width: 68%;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+        max-width: 60%;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+        max-width: 55%;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
     display: inline-block;
 }
 
 .section-outer {
-    padding: 0 20px 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 // === menu ===
@@ -42,22 +59,38 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgb(77, 76, 76);
-    position: fixed;
-    width: 100%;
     top: 0;
+    z-index: 10;
 
-    &-logo{
-        img{
-            display: none;
+
+    @media screen and (max-width: $screen-xs-max) {
+        &-logo {
+            img {
+                display: hidden;
+            }
         }
+
+        &-nav {
+            display: flex;
+            flex-direction: column;
+
+            &__text {
+                margin-top: 2px;
+            }
+        }
+
     }
+
     &-nav {
+
         display: flex;
         list-style: none;
 
         &__text {
+            @media screen and (min-width: $screen-md) {
+                margin-left: 30px;
+            }
 
-            margin-left: 30px;
 
             a {
                 color: #fff;
@@ -71,7 +104,7 @@ body {
 
                 &:hover {
                     color: #fff;
-                    background-color: rgb(247, 10, 2);
+                    background-color: rgb(47, 165, 159);
                     border-radius: 3px;
                 }
             }
@@ -86,19 +119,26 @@ body {
 // === about ===
 
 .section-about {
-    margin-top: 80px;
+    margin-top: 20px;
 
     .section-inner {
         padding-bottom: 20px;
         border-bottom: 1px solid rgb(117, 117, 117);
     }
 
-    &-wrapper {}
+    &-wrapper {
+        @media screen and (max-width: $screen-sm-max) {
+            text-align: center;
+        }
+    }
 
     &__img {
-        display: block;
-        margin-right: 20px;
-        float: left;
+
+        @media screen and (min-width: $screen-md) {
+            display: block;
+            margin-right: 20px;
+            float: left;
+        }
 
         img {}
     }
@@ -128,10 +168,22 @@ body {
 
             &__btn1,
             &__btn2 {
-                display: inline-block;
+                @media screen and (min-width: $screen-md) {
+                    display: inline-block;
+
+                }
+                @media screen and (max-width: $screen-sm-max) {
+                    &:not(:first-child) {
+                        margin-top: 14px;
+                    }
+
+                    a {
+                        width: 80%;
+                    }
+
+                }
 
                 a {
-
                     display: inline-block;
                     padding: 7px 20px;
                     border-radius: 5px;
@@ -139,9 +191,9 @@ body {
                     text-align: center;
                     text-transform: uppercase;
                     font-size: 13px;
-                    font-weight: 700;
+                    font-weight: 900;
                     letter-spacing: 0.5px;
-                    box-shadow: 0 0px 8px rgb(0, 0, 0);
+                    box-shadow: 0 0px 8px rgb(47, 165, 159);
                     transition: 0.2s;
 
                     &:hover {
@@ -152,11 +204,15 @@ body {
 
             &__btn1 {
                 a {
-                    background-color: rgb(247, 10, 2);
+                    background-color: rgb(47, 165, 159);
                     color: #fff;
-                    margin-right: 40px;
+
+                    @media screen and (min-width: $screen-md) {
+                        margin-right: 40px;
+                    }
+
                     min-width: 110px;
-                    line-height: 20px;
+                    line-height: 24px;
                 }
 
             }
@@ -164,8 +220,8 @@ body {
             &__btn2 {
                 a {
 
-                    color: rgb(247, 10, 2);
-                    border: 3px solid rgb(247, 10, 2);
+                    color: rgb(47, 165, 159);
+                    border: 3px solid rgb(47, 165, 159);
                     background-color: #fff;
                     min-width: 105px;
                 }
@@ -183,7 +239,7 @@ body {
 .section-education {
     &__title {
         font-size: 30px;
-        color: rgb(247, 10, 2);
+        color: rgb(47, 165, 159);
         font-weight: bold;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -198,6 +254,8 @@ body {
             font-weight: bold;
             position: relative;
             justify-content: space-between;
+            align-items: center;
+            padding-right: 80px;
 
             span {
                 position: absolute;
@@ -226,11 +284,38 @@ body {
 // === aside ===
 
 .aside {
-    position: absolute;
-    right: 0;
-    top: 80px;
-    width: 20%;
-    padding-right: 50px;
+
+    @media screen and (min-width: $screen-sm) {
+        position: absolute;
+        right: 0;
+        top: 80px;
+    }
+
+    @media screen and (min-width: $screen-md) {
+        width: 25%;
+        padding-right: 50px;
+    }
+
+    @media screen and (max-width: $screen-md-max) {
+        width: 30%;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+        width: 38%;
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+        width: 100%;
+
+        &-contact {
+            order: 2;
+            margin-top: 20px;
+        }
+
+        &-skills {
+            margin-top: 20px;
+        }
+    }
 
     &-wrapper {
         display: flex;
@@ -279,6 +364,10 @@ body {
     }
 
     &-skills {
+        @media screen and (max-width: $screen-xs-max) {
+            width: 90%;
+        }
+
         &__title {
             font-weight: bold;
             font-size: 18px;
@@ -299,7 +388,6 @@ body {
             &__persents-html,
             &__persents-css,
             &__persents-js {
-                width: 100%;
                 height: 16px;
                 background-color: rgba(226, 226, 226, 0.9);
                 margin-bottom: 10px;
@@ -307,7 +395,8 @@ body {
                 z-index: -2;
                 text-align: left;
                 color: #fff;
-
+                border-radius: 4px;
+                
                 span {
                     position: absolute;
                     left: 46%;
@@ -321,10 +410,11 @@ body {
             &__persents-html {
                 &:before {
                     content: "";
-                    background-color: rgb(247, 10, 2);
+                    background-color: rgb(47, 165, 159);
                     width: 90%;
                     height: 16px;
                     position: absolute;
+                    border-radius: 4px;
                     z-index: -1;
                 }
             }
@@ -332,10 +422,11 @@ body {
             &__persents-css {
                 &:before {
                     content: "";
-                    background-color: rgb(247, 10, 2);
+                    background-color: rgb(47, 165, 159);
                     width: 80%;
                     height: 16px;
                     position: absolute;
+                    border-radius: 4px;
                     z-index: -1;
                 }
             }
@@ -343,10 +434,11 @@ body {
             &__persents-js {
                 &:before {
                     content: "";
-                    background-color: rgb(247, 10, 2);
+                    background-color: rgb(47, 165, 159);
                     width: 70%;
                     height: 16px;
                     position: absolute;
+                    border-radius: 4px;
                     z-index: -1;
                 }
             }
