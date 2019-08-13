@@ -39,7 +39,6 @@ body {
 
     @media screen and (max-width: $screen-xs-max) {
         max-width: 100%;
-        margin: 0 auto;
     }
 
     display: inline-block;
@@ -64,11 +63,7 @@ body {
 
 
     @media screen and (max-width: $screen-xs-max) {
-        &-logo {
-            img {
-                display: hidden;
-            }
-        }
+        &-logo {}
 
         &-nav {
             display: flex;
@@ -172,6 +167,7 @@ body {
                     display: inline-block;
 
                 }
+
                 @media screen and (max-width: $screen-sm-max) {
                     &:not(:first-child) {
                         margin-top: 14px;
@@ -296,16 +292,15 @@ body {
         padding-right: 50px;
     }
 
-    @media screen and (max-width: $screen-md-max) {
+    @media screen and (min-width: $screen-md) and (max-width: $screen-md-max) {
         width: 30%;
     }
 
-    @media screen and (max-width: $screen-sm-max) {
+    @media screen and (min-width: $screen-sm) and (max-width: $screen-sm-max) {
         width: 38%;
     }
 
     @media screen and (max-width: $screen-xs-max) {
-        width: 100%;
 
         &-contact {
             order: 2;
@@ -365,7 +360,7 @@ body {
 
     &-skills {
         @media screen and (max-width: $screen-xs-max) {
-            width: 90%;
+            width: 100%;
         }
 
         &__title {
@@ -396,7 +391,7 @@ body {
                 text-align: left;
                 color: #fff;
                 border-radius: 4px;
-                
+
                 span {
                     position: absolute;
                     left: 46%;

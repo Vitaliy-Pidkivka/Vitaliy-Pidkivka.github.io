@@ -31,7 +31,6 @@ body {
 @media screen and (max-width: 575px) {
   .section-inner {
     max-width: 100%;
-    margin: 0 auto;
   }
 }
 
@@ -51,9 +50,6 @@ body {
   z-index: 10;
 }
 @media screen and (max-width: 575px) {
-  .section-menu-logo img {
-    display: hidden;
-  }
   .section-menu-nav {
     display: flex;
     flex-direction: column;
@@ -216,20 +212,17 @@ body {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .aside {
     width: 30%;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
   .aside {
     width: 38%;
   }
 }
 @media screen and (max-width: 575px) {
-  .aside {
-    width: 100%;
-  }
   .aside-contact {
     order: 2;
     margin-top: 20px;
@@ -274,7 +267,7 @@ body {
 }
 @media screen and (max-width: 575px) {
   .aside-skills {
-    width: 90%;
+    width: 100%;
   }
 }
 .aside-skills__title {
