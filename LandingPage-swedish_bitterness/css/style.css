@@ -75,7 +75,7 @@ body {
   width: 100%;
 }
 .top__inner-suptitle {
-  margin-top: 80px;
+  margin-top: 70px;
   margin-bottom: 25px;
   font-size: 14px;
   font-weight: 700;
@@ -91,7 +91,7 @@ body {
 }
 .top__inner-text {
   font-size: 18px;
-  margin-bottom: 90px;
+  margin-bottom: 73px;
   line-height: 24px;
   color: #fff;
 }
@@ -125,10 +125,10 @@ body {
   font-size: 14px;
   color: #000;
   font-weight: 400;
-  width: 200px;
+  width: 195px;
 }
 .top-form input:not(:last-of-type) {
-  margin-right: 23px;
+  margin-right: 30px;
 }
 .top-form input::placeholder {
   color: #c8dcba;
@@ -158,6 +158,43 @@ body {
 }
 .top-form button:hover {
   cursor: pointer;
+}
+
+.advantages__inner {
+  display: flex;
+  justify-content: space-around;
+}
+.advantages__item {
+  position: relative;
+  max-width: 200px;
+}
+.advantages__item:before {
+  position: absolute;
+  left: -35px;
+  top: -30px;
+  content: '';
+  display: block;
+  border: 5px solid #e4eddc;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+}
+.advantages__item-number {
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 26px;
+  color: #a4c58c;
+  text-transform: uppercase;
+  border-bottom: 2px solid #a4c58c;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.advantages__item-number span {
+  font-size: 22px;
+  margin-right: 5px;
+}
+.advantages__item-text {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
