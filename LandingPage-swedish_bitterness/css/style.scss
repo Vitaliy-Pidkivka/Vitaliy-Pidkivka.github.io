@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -203,11 +206,13 @@ body {
     }
     &__item{
         position: relative;
-        max-width: 200px;
+        width: 205px;
+        padding-left: 40px;
+        padding-top: 35px;
         &:before{
             position: absolute;
-            left: -35px;
-            top: -30px;
+            left: 0;
+            top: 0;
             content: '';
             display: block;
             border: 5px solid #e4eddc;
