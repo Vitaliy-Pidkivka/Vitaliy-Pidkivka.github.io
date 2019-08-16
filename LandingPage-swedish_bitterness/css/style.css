@@ -170,7 +170,7 @@ body {
 }
 .advantages__item {
   position: relative;
-  width: 205px;
+  width: 220px;
   padding-left: 40px;
   padding-top: 35px;
 }
@@ -180,7 +180,7 @@ body {
   top: 0;
   content: '';
   display: block;
-  border: 5px solid #e4eddc;
+  border: 5px solid rgba(126, 178, 82, 0.3);
   border-radius: 50%;
   width: 13px;
   height: 13px;
@@ -201,6 +201,7 @@ body {
 }
 .advantages__item-text {
   font-size: 14px;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
