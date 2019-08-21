@@ -40,7 +40,6 @@ body {
 }
 
 .section-menu {
-  display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-top: 20px;
@@ -49,13 +48,42 @@ body {
   top: 0;
   z-index: 10;
 }
-@media screen and (max-width: 575px) {
-  .section-menu-nav {
+@media screen and (min-width: 576px) {
+  .section-menu {
     display: flex;
+  }
+}
+@media screen and (max-width: 575px) {
+  .section-menu {
+    align-items: flex-start;
+  }
+  .section-menu .secton-menu-btn {
+    margin-right: 20px;
+  }
+  .section-menu .secton-menu-btn a {
+    color: #fff;
+    font-size: 18px;
+  }
+  .section-menu .secton-menu-btn a span {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .section-menu .secton-menu-btn a:hover {
+    cursor: pointer;
+  }
+  .section-menu-nav {
     flex-direction: column;
+  }
+  .section-menu-nav li {
+    display: none;
   }
   .section-menu-nav__text {
     margin-top: 2px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .section-menu .secton-menu-btn {
+    display: none;
   }
 }
 .section-menu-nav {

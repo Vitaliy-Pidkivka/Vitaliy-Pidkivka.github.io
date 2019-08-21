@@ -52,7 +52,10 @@ body {
 // === menu ===
 
 .section-menu {
-    display: flex;
+    @media screen and (min-width: $screen-sm){
+        display: flex;
+    }
+    
     justify-content: flex-start;
     align-items: center;
     padding-top: 20px;
@@ -63,10 +66,30 @@ body {
 
 
     @media screen and (max-width: $screen-xs-max) {
-        &-logo {}
+        align-items: flex-start;
+
+        .secton-menu-btn {
+            margin-right: 20px;
+
+            a {
+                span{
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+                color: #fff;
+                font-size: 18px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
 
         &-nav {
-            display: flex;
+            li {
+                display: none
+                
+            }
+
             flex-direction: column;
 
             &__text {
@@ -75,6 +98,13 @@ body {
         }
 
     }
+
+    @media screen and (min-width: $screen-sm) {
+        .secton-menu-btn {
+            display: none;
+        }
+    }
+
 
     &-nav {
 
