@@ -271,6 +271,7 @@ body {
     .tabs {
         width: 100%;
         padding-right: 20px;
+
         &__content {
             min-width: 500px;
             height: 689px;
@@ -294,47 +295,94 @@ body {
             span {
                 color: #a4c58c;
                 margin-right: 18px;
+            }
+        }
 
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+
+            .tab {
+                width: 50%;
+                font-weight: 400;
+                font-size: 16px;
+                text-transform: none;
+                display: flex;
+                align-items: center;
+                span {
+                    font-size: 12px;
+                }
+                &:nth-child(even){
+                    border-right: 1px solid #e6efde;
+                    padding-left: 20px;
+                }
+                &:nth-child(odd){
+                    border-right: 1px solid #e6efde;
+                    padding-right: 20px;
+                }
             }
         }
     }
-    .tab-item{
+
+    .tab-item {
         display: none;
         box-sizing: border-box;
         font-size: 12px;
         font-weight: 700;
         width: 43px;
         height: 43px;
-        border: 9px solid rgba(255,255,255, .8);
+        border: 9px solid rgba(255, 255, 255, .8);
         border-radius: 50px;
         position: absolute;
         text-align: center;
         line-height: 25px;
-        &:first-child{
+
+        &:first-child {
             display: block;
         }
     }
-    .item-1{
+
+    .item-1 {
         left: 150px;
         top: 182px;
     }
-    .item-2{
+
+    .item-2 {
         left: 300px;
         top: 200px;
     }
-    .item-3{
+
+    .item-3 {
         left: 228px;
         top: 32px;
     }
-    .item-1{
-        left: 200px;
+
+    .item-4 {
+        left: 228px;
+        top: 90px;
+    }
+
+    .item-5 {
+        left: 228px;
         top: 32px;
     }
-    .item-1{
-        left: 150px;
+
+    .item-6 {
+        left: 176px;
+        top: 112px;
+    }
+
+    .item-7 {
+        left: 228px;
+        top: 142px;
+    }
+
+    .item-8 {
+        left: 238px;
         top: 182px;
     }
-    .item-1{
+
+    .item-9 {
         left: 150px;
         top: 182px;
     }

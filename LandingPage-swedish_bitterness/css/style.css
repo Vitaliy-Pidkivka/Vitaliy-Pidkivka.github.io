@@ -245,6 +245,29 @@ body {
   color: #a4c58c;
   margin-right: 18px;
 }
+.list .tabs__box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list .tabs__box .tab {
+  width: 50%;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+}
+.list .tabs__box .tab span {
+  font-size: 12px;
+}
+.list .tabs__box .tab:nth-child(even) {
+  border-right: 1px solid #e6efde;
+  padding-left: 20px;
+}
+.list .tabs__box .tab:nth-child(odd) {
+  border-right: 1px solid #e6efde;
+  padding-right: 20px;
+}
 .list .tab-item {
   display: none;
   box-sizing: border-box;
@@ -273,15 +296,27 @@ body {
   left: 228px;
   top: 32px;
 }
-.list .item-1 {
-  left: 200px;
+.list .item-4 {
+  left: 228px;
+  top: 90px;
+}
+.list .item-5 {
+  left: 228px;
   top: 32px;
 }
-.list .item-1 {
-  left: 150px;
+.list .item-6 {
+  left: 176px;
+  top: 112px;
+}
+.list .item-7 {
+  left: 228px;
+  top: 142px;
+}
+.list .item-8 {
+  left: 238px;
   top: 182px;
 }
-.list .item-1 {
+.list .item-9 {
   left: 150px;
   top: 182px;
 }
