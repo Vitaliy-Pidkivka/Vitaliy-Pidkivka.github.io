@@ -137,10 +137,15 @@ body {
 }
 @media screen and (min-width: 768px) {
   .section-about__img {
-    display: block;
+    display: inline-block;
     margin-right: 20px;
     float: left;
+    width: 50%;
   }
+}
+.section-about__img img {
+  display: inline-block;
+  width: 95%;
 }
 .section-about-description__title {
   font-size: 30px;
@@ -156,12 +161,18 @@ body {
   font-size: 17px;
   margin-top: 20px;
 }
+.section-about-description__text p {
+  margin-bottom: 20px;
+}
 .section-about-description-buttons {
   margin-top: 15px;
 }
 @media screen and (min-width: 768px) {
   .section-about-description-buttons__btn1, .section-about-description-buttons__btn2 {
     display: inline-block;
+  }
+  .section-about-description-buttons__btn1:not(:last-child), .section-about-description-buttons__btn2:not(:last-child) {
+    margin-bottom: 14px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -174,7 +185,7 @@ body {
 }
 .section-about-description-buttons__btn1 a, .section-about-description-buttons__btn2 a {
   display: inline-block;
-  padding: 7px 20px;
+  padding: 8px 20px;
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
@@ -184,6 +195,7 @@ body {
   letter-spacing: 0.5px;
   box-shadow: 0 0px 8px #2fa59f;
   transition: 0.2s;
+  min-width: 110px;
 }
 .section-about-description-buttons__btn1 a:hover, .section-about-description-buttons__btn2 a:hover {
   transform: scale(1.1);
@@ -191,19 +203,12 @@ body {
 .section-about-description-buttons__btn1 a {
   background-color: #2fa59f;
   color: #fff;
-  min-width: 110px;
-  line-height: 24px;
-}
-@media screen and (min-width: 768px) {
-  .section-about-description-buttons__btn1 a {
-    margin-right: 40px;
-  }
+  border: 3px solid transparent;
 }
 .section-about-description-buttons__btn2 a {
   color: #2fa59f;
   border: 3px solid #2fa59f;
   background-color: #fff;
-  min-width: 105px;
 }
 
 .section-education {
@@ -394,6 +399,53 @@ body {
 }
 .aside-skills-item__text {
   font-size: 14px;
+}
+
+@media print {
+  title {
+    display: none;
+  }
+
+  .section-menu {
+    display: none;
+  }
+
+  .section-about {
+    width: 60%;
+    margin-right: 10px;
+  }
+  .section-about-wrapper {
+    display: flex;
+  }
+  .section-about__img {
+    display: none;
+  }
+  .section-about-description-buttons {
+    display: none;
+  }
+
+  .section-education {
+    width: 60%;
+    margin-right: 10px;
+  }
+
+  .aside {
+    border-left: 1px solid #000;
+    margin-top: 30px;
+    top: 0;
+    right: -20px;
+    position: absolute;
+    width: 32%;
+  }
+  .aside .section-outer {
+    padding-right: 0;
+  }
+  .aside-contact {
+    padding: 0;
+  }
+  .aside-contact-item {
+    padding-left: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

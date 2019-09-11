@@ -7,6 +7,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
 }
 
 .container {
@@ -80,7 +82,7 @@ body {
   max-width: 570px;
   width: 100%;
 }
-.top__inner-suptitle {
+.top__inner-subtitle {
   margin-top: 70px;
   margin-bottom: 25px;
   font-size: 14px;
@@ -206,12 +208,15 @@ body {
   line-height: 24px;
 }
 
+.list {
+  margin-top: 200px;
+}
 .list__title {
   font-weight: 700;
   color: #303030;
   font-size: 40px;
-  line-height: 50;
-  min-width: 470px;
+  line-height: 50px;
+  max-width: 470px;
   margin-bottom: 30px;
 }
 .list__inner {
@@ -230,13 +235,15 @@ body {
   background-size: cover;
   background-position: top center;
   position: relative;
+  margin-top: -170px;
 }
 .list .tabs .tab {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   color: #303030;
-  padding: 20px 0;
+  padding: 26px 40px 20px 0;
+  align-items: center;
   border-bottom: 1px solid #e6efde;
   text-transform: uppercase;
   cursor: pointer;
@@ -267,6 +274,66 @@ body {
 .list .tabs__box .tab:nth-child(odd) {
   border-right: 1px solid #e6efde;
   padding-right: 20px;
+}
+.list .tabs__reviews {
+  padding: 20px;
+  background-color: #f6f9f3;
+  max-width: 430px;
+  position: absolute;
+  bottom: 0;
+}
+.list .tabs__reviews-inner {
+  border: 1px solid #c5dab5;
+  padding: 30px 50px 30px 40px;
+}
+.list .tabs__reviews-text {
+  color: #303030;
+}
+.list .tabs__reviews-link {
+  color: #7eb152;
+  font-weight: 600;
+  padding: 0 8px;
+  position: absolute;
+  bottom: 10px;
+  background-color: #f6f9f3;
+  text-decoration: none;
+}
+.list .tabs__reviews-link:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  border-bottom: 1px solid #7eb152;
+  margin: 0 auto;
+  left: 0;
+  bottom: -1px;
+}
+.list__link {
+  display: flex;
+  justify-content: flex-end;
+}
+.list__link a {
+  margin-top: 20px;
+  padding: 22px 155px 22px 125px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #7eb252;
+  text-transform: uppercase;
+  text-decoration: none;
+  min-width: 500px;
+  position: relative;
+}
+.list__link a:after {
+  content: '';
+  background-image: url(../images/arrow-right.png);
+  width: 31px;
+  height: 9px;
+  position: absolute;
+  right: 105px;
+  top: 30px;
 }
 .list .tab-item {
   display: none;
@@ -319,6 +386,109 @@ body {
 .list .item-9 {
   left: 150px;
   top: 182px;
+}
+
+.tab.active {
+  position: relative;
+}
+.tab.active:after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  background-image: url(../images/shevron.svg);
+  width: 8px;
+  height: 13px;
+}
+
+.tabs__box .tab.active:after {
+  display: none;
+}
+
+.popularity {
+  margin-top: 200px;
+}
+.popularity__wrapper {
+  max-width: 1720px;
+  margin: 0 auto;
+  background: url(../images/popularity.jpg);
+  min-height: 645px;
+  background-repeat: no-repeat;
+}
+.popularity__inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.popularity__box {
+  background-color: #fff;
+  padding: 20px;
+  margin-right: 70px;
+}
+.popularity__box-text {
+  border: 1px solid #c5dab5;
+  padding: 30px;
+  color: #303030;
+}
+.popularity__box-link {
+  padding: 22px 85px 22px 27px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #7eb252;
+  text-transform: uppercase;
+  text-decoration: none;
+  min-width: 500px;
+  position: absolute;
+  text-decoration: none;
+}
+.popularity__box-link:after {
+  content: '';
+  background-image: url(../images/arrow-right.png);
+  width: 31px;
+  height: 9px;
+  position: absolute;
+  right: 40px;
+  top: 30px;
+}
+.popularity__right {
+  max-width: 500px;
+  padding-right: 15px;
+  width: 100%;
+}
+.popularity__right-title {
+  margin-top: 55px;
+  font-weight: 700;
+  line-height: 50px;
+  font-size: 40px;
+  color: #303030;
+}
+.popularity__right-subtitle {
+  font-size: 14px;
+  color: #303030;
+  padding: 50px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.popularity__right-list li {
+  list-style: none;
+  color: #303030;
+  line-height: 22px;
+  padding-left: 40px;
+  margin-bottom: 45px;
+  position: relative;
+}
+.popularity__right-list li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 8px;
+  height: 13px;
+  background-image: url(../images/shevron.svg);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */

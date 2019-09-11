@@ -15,7 +15,6 @@ function toggleCheckbox() {
 }
 // end checkbox
 
-
 // корзина
 function toggleCart() {
     const btnCart = document.getElementById('cart');
@@ -32,15 +31,12 @@ function toggleCart() {
 }
 // end корзина
 
-
 // работа с корзиной
 function addCart() {
     const cards = document.querySelectorAll('.goods .card'),
         cartWrapper = document.querySelector('.cart-wrapper'),
         cartEmpty = document.getElementById('cart-empty'),
         countGoods = document.querySelector('.counter');
-
-
 
     cards.forEach((card) => {
         const btn = card.querySelector('button');
@@ -94,60 +90,136 @@ function actionPage() {
         searchBtn = document.querySelector('.search-btn');
 
     // поиск по акции
-    discountCheckbox.addEventListener('click', () => {
-        cards.forEach((card) => {
-            if (discountCheckbox.checked) {
-                if (!card.querySelector('.card-sale')) {
-                    card.parentNode.style.display = 'none';
-                    // card.parentNode.remove();
-
-                }
-            } else {
-                card.parentNode.style.display = 'block';
-                // goods.appendChild(card.parentNode);
-            }
-        });
-    });
+    discountCheckbox.addEventListener('click', filter);
 
     // фильтр по цене
-    min.addEventListener('change', filterPrice);
-    max.addEventListener('change', filterPrice);
+    min.addEventListener('change', filter);
+    max.addEventListener('change', filter);
 
-    function filterPrice() {
+    function filter() {
         cards.forEach((card) => {
             const cardPrice = card.querySelector('.card-price');
             const price = parseFloat(cardPrice.textContent);
+            const discount = card.querySelector('.card-sale');
 
             if ((min.value && price < min.value) || (max.value && price > max.value)) {
-                // card.parentNode.style.display = 'none';
-                card.parentNode.remove();
-            } else {
-                // card.parentNode.style.display = 'block';
-                goods.appendChild(card.parentNode);
-            }
-
-        });
-    }
-
-    // поиск 
-
-    searchBtn.addEventListener('click', () => {
-        const searchText = new RegExp(search.value.trim(), 'i');
-        cards.forEach((card) => {
-            const title = card.querySelector('.card-title');
-            if (!searchText.test(title.textContent)) {
+                card.parentNode.style.display = 'none';
+            } else if (discountCheckbox.checked && !discount) {
                 card.parentNode.style.display = 'none';
             } else {
                 card.parentNode.style.display = '';
             }
-        })
 
-    });
+        });
 
+        // поиск 
+
+        searchBtn.addEventListener('click', () => {
+            const searchText = new RegExp(search.value.trim(), 'i');
+            cards.forEach((card) => {
+                const title = card.querySelector('.card-title');
+                if (!searchText.test(title.textContent)) {
+                    card.parentNode.style.display = 'none';
+                } else {
+                    card.parentNode.style.display = '';
+                }
+            })
+
+        });
+
+    }
 }
 // end фильтр акции
 
-toggleCheckbox();
-toggleCart();
-addCart();
-actionPage();
+// получение данных с сервера 
+
+function getData() {
+    const goodsWrapper = document.querySelector('.goods');
+    return fetch('../db/db.json')
+        .then((response) => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error('Данные не были получены, ошибка: ' + response.status);
+            }
+        })
+        .then((data) => {
+            return data;
+        })
+        .catch(err => {
+            console.warn(err);
+            goodsWrapper.innerHTML = '<div style="color:red; font-size:40px">Упс что-то пошло не так</div>'
+        });
+}
+// end  получение данных с сервера 
+
+//  выводим карточки товара 
+function renderCards(data) {
+    const goodsWrapper = document.querySelector('.goods');
+    data.goods.forEach((good) => {
+        const card = document.createElement('div');
+        card.className = 'col-12 col-md-6 col-lg-4 col-xl-3';
+        card.innerHTML = `
+              <div class="card" data-category="${good.category}">
+              ${good.sale ? '<div class="card-sale">🔥Hot Sale🔥</div>' : ''}
+						
+						<div class="card-img-wrapper">
+							<span class="card-img-top"
+									style="background-image: url('${good.img}')"></span>
+								</div>
+						<div class="card-body justify-content-between">
+							<div class="card-price" style="${good.sale ? 'color:red' : ''}">${good.price} ₽</div>
+					    	    <h5 class="card-title">${good.title}</h5>
+					    	    <button class="btn btn-primary">В корзину</button>
+						</div>
+					</div>
+                </div>
+        `;
+        goodsWrapper.appendChild(card);
+    });
+}
+//  выводим карточки товара 
+
+function renderCatalog() {
+    const cards = document.querySelectorAll('.goods .card');
+    const catalogList = document.querySelector('.catalog-list');
+    const catalogWrapper = document.querySelector('.catalog');
+    const catalogBtn = document.querySelector('.catalog-button');
+    const categories = new Set();
+
+    cards.forEach((card) => {
+        categories.add(card.dataset.category);
+    });
+
+    categories.forEach((item) => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        catalogList.appendChild(li);
+    });
+
+    catalogBtn.addEventListener('click', (event) => {
+        if (catalogWrapper.style.display){
+            catalogWrapper.style.display = '';
+        } else {
+            catalogWrapper.style.display = 'block';
+        }
+        if (event.target.tagName === 'LI'){
+            cards.forEach((card) => {
+                if(card.dataset.category === event.target.textContent){
+                    card.parentNode.style.display = '';
+                } else{
+                    card.parentNode.style.display = 'none';
+                }
+            });
+        }
+    });
+}
+
+getData().then((data) => {
+    renderCards(data);
+    toggleCheckbox();
+    toggleCart();
+    addCart();
+    actionPage();
+    renderCatalog();
+});
