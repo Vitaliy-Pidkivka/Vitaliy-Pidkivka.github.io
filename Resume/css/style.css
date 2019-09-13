@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   background-color: rgba(252, 252, 252, 0.932);
   color: #4d4c4c;
@@ -106,7 +106,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   font-weight: 400;
   font-size: 13px;
   padding: 4px 8px;
@@ -268,6 +268,33 @@ body {
   color: blue;
 }
 
+.screen {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  font-weight: 400;
+  padding: 4px 20px;
+}
+.screen a {
+  font-size: 12px;
+}
+.screen:hover {
+  color: #fff;
+  background-color: #2fa59f;
+  border-radius: 3px;
+}
+
+@media print {
+  display: none;
+}
+@media screen {
+  .print {
+    display: none;
+  }
+}
+
 .aside {
   order: 3;
 }
@@ -366,7 +393,7 @@ body {
 .aside-skills-item__title:not(:last-child) {
   margin-bottom: 10px;
 }
-.aside-skills-item__persents-html, .aside-skills-item__persents-css, .aside-skills-item__persents-js {
+.aside-skills-item__persents {
   height: 16px;
   background-color: rgba(226, 226, 226, 0.9);
   margin-bottom: 10px;
@@ -376,13 +403,18 @@ body {
   color: #fff;
   border-radius: 4px;
 }
-.aside-skills-item__persents-html span, .aside-skills-item__persents-css span, .aside-skills-item__persents-js span {
+@media print {
+  .aside-skills-item__persents {
+    display: none;
+  }
+}
+.aside-skills-item__persents span {
   position: absolute;
   left: 46%;
   top: -1px;
   font-weight: bold;
 }
-.aside-skills-item__persents-html:before {
+.aside-skills-item .html:before {
   content: "";
   background-color: #2fa59f;
   width: 90%;
@@ -391,7 +423,7 @@ body {
   border-radius: 4px;
   z-index: -1;
 }
-.aside-skills-item__persents-css:before {
+.aside-skills-item .css:before {
   content: "";
   background-color: #2fa59f;
   width: 80%;
@@ -400,10 +432,37 @@ body {
   border-radius: 4px;
   z-index: -1;
 }
-.aside-skills-item__persents-js:before {
+.aside-skills-item .js:before {
   content: "";
   background-color: #2fa59f;
   width: 70%;
+  height: 16px;
+  position: absolute;
+  border-radius: 4px;
+  z-index: -1;
+}
+.aside-skills-item .scss:before {
+  content: "";
+  background-color: #2fa59f;
+  width: 70%;
+  height: 16px;
+  position: absolute;
+  border-radius: 4px;
+  z-index: -1;
+}
+.aside-skills-item .bootstrap:before {
+  content: "";
+  background-color: #2fa59f;
+  width: 70%;
+  height: 16px;
+  position: absolute;
+  border-radius: 4px;
+  z-index: -1;
+}
+.aside-skills-item .photoshop:before {
+  content: "";
+  background-color: #2fa59f;
+  width: 80%;
   height: 16px;
   position: absolute;
   border-radius: 4px;
@@ -450,6 +509,9 @@ body {
   }
   .aside-contact-item {
     padding-left: 0;
+  }
+  .aside-contact-item__title:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
