@@ -127,7 +127,6 @@ body {
 }
 .section-about .section-inner {
   padding-bottom: 20px;
-  border-bottom: 1px solid #757575;
 }
 @media screen and (max-width: 767px) {
   .section-about-wrapper {
@@ -140,7 +139,7 @@ body {
     display: inline-block;
     margin-right: 20px;
     float: left;
-    width: 50%;
+    width: 30%;
   }
 }
 .section-about__img img {
@@ -148,6 +147,7 @@ body {
   width: 95%;
 }
 .section-about-description__title {
+  margin-top: 10px;
   font-size: 30px;
   letter-spacing: 0.5px;
   font-weight: bold;
@@ -213,6 +213,18 @@ body {
 
 .section-education {
   order: 4;
+  margin-left: 10px;
+  border-top: 1px solid #757575;
+}
+@media screen and (min-width: 992px) {
+  .section-education {
+    max-width: 65%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .section-education {
+    max-width: 56%;
+  }
 }
 .section-education__title {
   font-size: 30px;
@@ -279,7 +291,7 @@ body {
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .aside {
-    width: 38%;
+    width: 40%;
   }
 }
 @media screen and (max-width: 575px) {
@@ -402,10 +414,6 @@ body {
 }
 
 @media print {
-  title {
-    display: none;
-  }
-
   .section-menu {
     display: none;
   }
@@ -417,15 +425,12 @@ body {
   .section-about-wrapper {
     display: flex;
   }
-  .section-about__img {
-    display: none;
-  }
   .section-about-description-buttons {
     display: none;
   }
 
   .section-education {
-    width: 60%;
+    width: 58%;
     margin-right: 10px;
   }
 
