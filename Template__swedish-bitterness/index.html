@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
-    <!-- header -->
 
     <header class="header">
         <div class="container">
@@ -36,11 +36,11 @@
         </div>
     </header>
 
-    <!-- end header -->
 
-    <!-- top -->
     <div class="top">
         <div class="top__images"></div>
+        <a class="mobile__link-btn" href="#">Узнать больше</a>
+
         <div class="top__wrapper">
             <div class="container">
                 <div class="top__inner">
@@ -74,9 +74,8 @@
             </div>
         </div>
     </div>
-    <!--  end top -->
 
-    <!-- advantages -->
+
 
     <div class="advantages">
         <div class="container">
@@ -109,9 +108,8 @@
         </div>
     </div>
 
-    <!-- end advantages -->
 
-    <!--  list -->
+
 
     <section class="list">
         <div class="container-fluid">
@@ -137,17 +135,17 @@
                             <span>05.</span> Головные боли
                         </div>
                         <div class="tabs__box">
-                            <div class="tab" data-id="6">
+                            <div class="tab tab-order-0" data-id="6">
                                 <span>06.</span> Синяки, шишки, ожоги, порезы долго не проходят
                             </div>
 
-                            <div class="tab" data-id="8">
+                            <div class="tab tab-order-2" data-id="8">
                                 <span>08.</span> Проблемы с желудком
                             </div>
-                            <div class="tab" data-id="7">
+                            <div class="tab tab-order-1" data-id="7">
                                 <span>07.</span> Плохо засыпаете и часто просыпаетесь
                             </div>
-                            <div class="tab" data-id="9">
+                            <div class="tab tab-order-3" data-id="9">
                                 <span>09.</span> Стресс
                             </div>
                         </div>
@@ -177,9 +175,9 @@
                     </div>
     </section>
 
-    <!--  end list -->
 
-    <!--  populatiry -->
+
+
 
     <section class="popularity">
         <div class="popularity__wrapper container-fluid">
@@ -218,12 +216,13 @@
                 </div>
             </div>
         </div>
+        <div class="mobile-bg"></div>
     </section>
 
-    <!-- end  populatiry -->
 
 
-    <!--   history -->
+
+
 
     <section class="history">
         <div class="container-fluid history__wrapper">
@@ -254,11 +253,11 @@
             </div>
         </div>
     </section>
-    <!-- end  history -->
 
 
 
-    <!--   quote -->
+
+
 
 
     <section class="quote">
@@ -275,10 +274,7 @@
         </div>
     </section>
 
-    <!-- end  quote -->
 
-
-    <!--   items -->
 
     <section class="items">
         <div class="container-fluid">
@@ -322,8 +318,6 @@
     </section>
 
 
-    <!-- end  items -->
-    <!--   composition -->
 
     <section class="composition">
         <div class="container">
@@ -530,7 +524,184 @@
         </div>
     </section>
 
-    <!-- end  composition -->
+
+
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__title">
+                Отзывы
+                <br> о «Шведской горечи»
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="reviews__inner">
+                <div class="reviews__tabs">
+                    <div class="container">
+                        <div class="reviews__tab active" data-id="tab-1">От российскийх потребителей</div>
+                        <div class="reviews__tab" data-id="tab-2">От зарубежных потребителей</div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="reviews__content">
+                        <div class="container">
+                            <div class="reviews__content-item active-tab" id="tab-1">
+                                <div class="reviews-textbox">
+                                    <div class="reviews-text">
+                                        Если время от времени употреблять горечь, то вообще не будет болеть ОРЗ или ангинами. Младшему сыну я развожу раствор слабее (горечь, вода), он с удоволь- ствием пьет, иногда даже сам просит сделать ему го- речь. Только делаю меньше половины стакана,
+                                        чтобы малыш смог выпить. <span>Аноним</span>
+                                    </div>
+
+                                    <div class="reviews-text">
+                                        Этот сбор действительно очень хорошая вещь. Я его приобрела по совету своей тёти. Замечательно помогает при зубной боли, а также я его постоянно принимаю при простуде. Помогает хорошо и нет никакой химии. <span>Юлия</span>
+
+                                    </div>
+                                    <div class="reviews-text">
+                                        Моя семья на протяжение многих лет пользуется шведской горечью. При болях в горле мы полоскаем горечью. Когда температура я даю горечь и при этом мы не пользуемся таблетками.
+                                        <span>Натали</span>
+                                    </div>
+
+                                    <div class="reviews-text">
+                                        Я покупаю уже готовый сбор шведский бальзам. Отказались от многих лекарственных препаратов благодаря бальзаму. Так что могу только посоветовать самим попробовать, это стоит того.
+                                        <span>Евгений</span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="reviews__content-item " id="tab-2">
+                                <div class="reviews-textbox">
+                                    <div class="reviews-text">
+                                        Если время от времени употреблять горечь, то вообще не будет болеть ОРЗ или ангинами. Младшему сыну я развожу раствор слабее (горечь, вода), он с удоволь- ствием пьет, иногда даже сам просит сделать ему го- речь. Только делаю меньше половины стакана,
+                                        чтобы малыш смог выпить. <span>Аноним</span>
+                                    </div>
+
+                                    <div class="reviews-text">
+                                        Этот сбор действительно очень хорошая вещь. Я его приобрела по совету своей тёти. Замечательно помогает при зубной боли, а также я его постоянно принимаю при простуде. Помогает хорошо и нет никакой химии. <span>Юлия</span>
+
+                                    </div>
+                                    <div class="reviews-text">
+                                        Моя семья на протяжение многих лет пользуется шведской горечью. При болях в горле мы полоскаем горечью. Когда температура я даю горечь и при этом мы не пользуемся таблетками.
+                                        <span>Натали</span>
+                                    </div>
+
+                                    <div class="reviews-text">
+                                        Я покупаю уже готовый сбор шведский бальзам. Отказались от многих лекарственных препаратов благодаря бальзаму. Так что могу только посоветовать самим попробовать, это стоит того.
+                                        <span>Евгений</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="reviews__link">
+                    <a class="reviews__link-tab" href="#">
+                            Читать ещё отзывы
+                    </a>
+                    <a class="reviews__link-popup" href="#">
+                            Присоединиться к тем, кто решил свои проблемы
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="build">
+        <div class="container-fluid">
+            <div class="build__wrapper">
+                <div class="container">
+                    <div class="build__content">
+                        <div class="build__inner">
+                            <div class="build__inner-box">
+                                <div class="build__title">
+                                    Вы принимаете участие в создании эликсира
+                                </div>
+                                <div class="build__text">
+                                    <p>Приготовление бальзама потребует от вас минимум усилий. Достаточно залить травы 1,5 литрами водки и настоять в течение 14 дней ежедневно взбалтывая. </p>
+                                    <p>Но даже такое небольшое количество действий даст вам возможность почувствовать себя настоящим врачевателем и привнесет вашу энергетику в получившийся целительный эликсир.</p>
+                                    <span>Настоя одной упаковки хватает на 4-5 месяцев</span>
+                                </div>
+                                <a href="#" class="build__link">
+                                    создать эликсир молодости и здоровья
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="sertificate">
+        <div class="container">
+            <div class="sertificate__title">
+                Гарантия качества
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="sertificate__wrapper">
+                <div class="container">
+                    <div class="sertificate__inner">
+                        <div class="sertificate__content">
+                            <div class="sertificate__text">
+                                Если бальзам вам не понравится, мы вернем деньги. Сразу и без лишних вопросов. Мы дорожим своей репутацией и уверены в продукте на 100%
+                            </div>
+                            <div class="sertificate__box">
+                                <fieldset>
+                                    <legend>Но:</legend>
+                                    <p>
+                                        Этот эликсир – именно то средство, которое вам всегда захочется иметь дома в аптечке и рекомен- довать своим близким.
+
+
+                                    </p>
+                                    <p>
+                                        К каждой упаковке «Шведской горечи» мы прикла- дываем немецкий сертификат качества.
+                                    </p>
+                                    <a href="#" class="sertificate__link">
+                                        Заказать сбор трав
+                                    </a>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="sertificate__images">
+                            <img src="./images/sertificate.jpg" alt="sertificate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="swedish bitter"></a>
+                </div>
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+                <a href="#" class="footer__link">Отказ от ответственности</a>
+                <a href="#" class="footer__link">Согласие с рассылкой</a>
+                <div class="footer__phone">
+                    <a href="tel:88000000000">
+                    8 800 000-00-00
+                    <div class="footer__phone-text">
+                      Звонок бесплатний
+                    </div>
+                  </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
