@@ -1,192 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
 
-  <title>Calculator-Bootstrap</title>
+    <title>Calculator-Bootstrap</title>
 </head>
 
 <body>
-
-
-  <div class="container-fluid d-block d-md-none">
-    <div class="header">
-      <div class="row  align-items-center row_calculator">
-        <div class="col-3 col-sm-3 box calculator text-left">Calculator</div>
-        <div class="col-2 offset-3 col-sm-2 offset-sm-3 text-right box"><i class="fa fa-window-minimize"
-            aria-hidden="true"></i>
+    <div class="container-fluid d-block d-md-none">
+        <div class="header">
+            <div class="row  align-items-center row_calculator">
+                <div class="col-3 col-sm-3 box calculator text-left">Calculator</div>
+                <div class="col-2 offset-3 col-sm-2 offset-sm-3 text-right box">
+                    <i class="fa fa-window-minimize" aria-hidden="true"></i>
+                </div>
+                <div class="col-2 col-sm-2 text-right box">
+                    <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                </div>
+                <div class="col-2 col-sm-2 text-right box">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="row text-center align-items-center row_standard">
+                <div class="col-1 col-sm-1 box">&#8801;</div>
+                <div class="col-3 col-sm-3 standard box">Standard</div>
+                <div class="col-1 col-sm-1 offset-7 offset-sm-7 box">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-right box display">0</div>
+            </div>
+            <div class="row text-center varieties_m">
+                <div class="col-2 col-sm-2  ">Mc</div>
+                <div class="col-2 col-sm-2 ">Mr</div>
+                <div class="col-2 col-sm-2">M+</div>
+                <div class="col-2 col-sm-2">M-</div>
+                <div class="col-2 col-sm-2">Ms</div>
+                <div class="col-2 col-sm-2 ">
+                    M<i class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
+            </div>
         </div>
-        <div class="col-2 col-sm-2 text-right box"><i class="fa fa-window-maximize" aria-hidden="true"></i></div>
-        <div class="col-2 col-sm-2 text-right box"><i class="fa fa-times" aria-hidden="true"></i></div>
-      </div>
-      <div class="row text-center align-items-center row_standard">
-        <div class="col-1 col-sm-1 box">&#8801;</div>
-        <div class="col-3 col-sm-3 standard box">Standard</div>
-        <div class="col-1 col-sm-1 offset-7 offset-sm-7 box"><i class="fa fa-clock-o" aria-hidden="true"></i>
+        <div class="text-center align-items-center main">
+            <div class="row buttons_wrapper">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-3 col-sm-3 box">&#37;</div>
+                        <div class="col-3 col-sm-3 box sqrt">&#8730;</div>
+                        <div class="col-3 col-sm-3 font-italic box squared">x&#178;</div>
+                        <div class="col-3 col-sm-3 font-italic box">&#185;&#8260; x</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 col-sm-3 box clear_btn" id="ce">Ce</div>
+                        <div class="col-3 col-sm-3 box clear_btn" id="c">C</div>
+                        <div class="col-3 col-sm-3 box back">&#9746;</div>
+                        <div class="col-3 col-sm-3 box operation">&divide;</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 col-sm-3 box numbers">7</div>
+                        <div class="col-3 col-sm-3 box numbers">8</div>
+                        <div class="col-3 col-sm-3 box numbers">9</div>
+                        <div class="col-3 col-sm-3 box operation">&#215;</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 col-sm-3 box numbers">4</div>
+                        <div class="col-3 col-sm-3 box numbers">5</div>
+                        <div class="col-3 col-sm-3 box numbers">6</div>
+                        <div class="col-3 col-sm-3 box operation">&#8722;</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 col-sm-3 box numbers">1</div>
+                        <div class="col-3 col-sm-3 box numbers">2</div>
+                        <div class="col-3 col-sm-3 box numbers">3</div>
+                        <div class="col-3 col-sm-3 box operation">&#43;</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 col-sm-3 box">&#177;</div>
+                        <div class="col-3 col-sm-3 box numbers">0</div>
+                        <div class="col-3 col-sm-3 box decimal">.</div>
+                        <div class="col-3 col-sm-3 box operation" id="result">=</div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12 text-right  result box display">0</div>
-      </div>
-      <div class="row text-center varieties_m">
-        <div class="col-2 col-sm-2 m_thin ">Mc</div>
-        <div class="col-2 col-sm-2 m_thin">Mr</div>
-        <div class="col-2 col-sm-2">M+</div>
-        <div class="col-2 col-sm-2">M-</div>
-        <div class="col-2 col-sm-2">Ms</div>
-        <div class="col-2 col-sm-2 m_thin">M<i class="fa fa-caret-down" aria-hidden="true"></i></div>
-      </div>
-    </div>
-    <div class="text-center align-items-center main">
-      <div class="row buttons_wrapper">
-        <div class="col-sm-12">
-          <div class="row">
-            <div class="col-3 col-sm-3 box">&#37;</div>
-            <div class="col-3 col-sm-3 box">&#8730;</div>
-            <div class="col-3 col-sm-3 font-italic box">x&#178;</div>
-            <div class="col-3 col-sm-3 font-italic box">&#185;&#8260; x</div>
-          </div>
-          <div class="row">
-            <div class="col-3 col-sm-3 box clear_btn" id="ce">Ce</div>
-            <div class="col-3 col-sm-3 box clear_btn" id="c">C</div>
-            <div class="col-3 col-sm-3 box" id="back">&#9746;</div>
-            <div class="col-3 col-sm-3 box operation">&divide;</div>
-          </div>
-          <div class="row">
-            <div class="col-3 col-sm-3 box numbers">7</div>
-            <div class="col-3 col-sm-3 box numbers">8</div>
-            <div class="col-3 col-sm-3 box numbers">9</div>
-            <div class="col-3 col-sm-3 box operation">&#215;</div>
-          </div>
-          <div class="row">
-            <div class="col-3 col-sm-3 box numbers">4</div>
-            <div class="col-3 col-sm-3 box numbers">5</div>
-            <div class="col-3 col-sm-3 box numbers">6</div>
-            <div class="col-3 col-sm-3 box operation">&#8722;</div>
-          </div>
-          <div class="row">
-            <div class="col-3 col-sm-3 box numbers">1</div>
-            <div class="col-3 col-sm-3 box numbers">2</div>
-            <div class="col-3 col-sm-3 box numbers">3</div>
-            <div class="col-3 col-sm-3 box operation">&#43;</div>
-          </div>
-          <div class="row">
-            <div class="col-3 col-sm-3 box">&#177;</div>
-            <div class="col-3 col-sm-3 box numbers">0</div>
-            <div class="col-3 col-sm-3 box" id="decimal">.</div>
-            <div class="col-3 col-sm-3 box operation" id="result">=</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="container-fluid d-none d-md-block">
-
-    <div class="row  align-items-center md_calculator">
-      <div class="col-md-1">Calculator</div>
-      <div class="col-md-2 offset-md-9 text-right">
-        <i class="fa fa-window-minimize" aria-hidden="true"></i>
-        <i class="fa fa-window-maximize" aria-hidden="true"></i>
-        <i class="fa fa-times" aria-hidden="true"></i>
-      </div>
-    </div>
-    <div class="row standard_md">
-      <div class="col-md-3">
-        <span>&#8801;</span>
-        <span id="standard">Standard</span>
-      </div>
-      <div class="col-md-4 offset-md-5 col-lg-3 offset-lg-6 text-center navigation">
-        <span>History</span>
-        <span>Memory</span>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10 text-right result_md display display" id="display">0</div>
-      <div class="col-md-2 result_text">
-        <span>There's no history yet</span>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-5 variates_m">
-        <span class="m_thin">Mc</span>
-        <span class="m_thin">Mr</span>
-        <span>M+</span>
-        <span>M-</span>
-        <span>Ms</span>
-      </div>
     </div>
 
-
-    <div class="row buttons_wrapper">
-      <div class="col-md-12">
-        <div class="row text-center calculator_buttons">
-          <div class="col-md-2 box"><span>&#37;</span></div>
-          <div class="col-md-2 box clear_btn" id="ce" >CE</div>
-          <div class="col-md-2 box clear_btn" id="c" >C</div>
-          <div class="col-md-2 box" id="back" >&#9746;</div>
-          <div class="col-md-2 box operation" >&#247;</div>
+    <div class="container-fluid d-none d-md-block">
+        <div class="row  align-items-center md_calculator">
+            <div class="col-md-1">Calculator</div>
+            <div class="col-md-2 offset-md-9 text-right">
+                <i class="fa fa-window-minimize" aria-hidden="true"></i>
+                <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
         </div>
-        <div class="row text-center calculator_buttons">
-          <div class="col-md-2 box">&#8730;</div>
-          <div class="col-md-2 box numbers">7</div>
-          <div class="col-md-2 box numbers">8</div>
-          <div class="col-md-2 box numbers">9</div>
-          <div class="col-md-2 box operation">&#215;</div>
+        <div class="row standard_md">
+            <div class="col-md-3">
+                <span>&#8801;</span>
+                <span id="standard">Standard</span>
+            </div>
+            <div class="col-md-4 offset-md-5 col-lg-3 offset-lg-6 text-center navigation">
+                <span>History</span>
+                <span>Memory</span>
+            </div>
         </div>
-        <div class="row text-center calculator_buttons">
-          <div class="col-md-2 box">x&#178;</div>
-          <div class="col-md-2 box numbers">4</div>
-          <div class="col-md-2 box numbers">5</div>
-          <div class="col-md-2 box numbers">6</div>
-          <div class="col-md-2 box operation">&#8722;</div>
+        <div class="row">
+            <div class="col-md-10 text-right result_md display ">0</div>
+            <div class="col-md-2 result_text">
+                <span>There's no history yet</span>
+            </div>
         </div>
-        <div class="row text-center calculator_buttons">
-          <div class="col-md-2 box">x&#179;</div>
-          <div class="col-md-2 box numbers">1</div>
-          <div class="col-md-2 box numbers">2</div>
-          <div class="col-md-2 box numbers">3</div>
-          <div class="col-md-2 box operation">&#43;</div>
-        </div>
-        <div class="row text-center calculator_buttons">
-          <div class="col-md-2 box">&#185;&#8260; x</div>
-          <div class="col-md-2 box">&#177;</div>
-          <div class="col-md-2 box numbers">0</div>
-          <div class="col-md-2 box" id="decimal">.</div>
-          <div class="col-md-2 box operation" id="result">=</div>
+        <div class="row">
+            <div class="col-md-5 variates_m">
+                <span class="">Mc</span>
+                <span class="">Mr</span>
+                <span>M+</span>
+                <span>M-</span>
+                <span>Ms</span>
+            </div>
         </div>
 
-      </div>
+        <div class="row ">
+            <div class="col-md-12 buttons_wrapper">
+                <div class="row text-center calculator_buttons">
+                    <div class="col-md-2 box"><span>&#37;</span></div>
+                    <div class="col-md-2 box clear_btn" id="ce">CE</div>
+                    <div class="col-md-2 box clear_btn" id="c">C</div>
+                    <div class="col-md-2 box back">&#9746;</div>
+                    <div class="col-md-2 box operation">&#247;</div>
+                </div>
+                <div class="row text-center calculator_buttons">
+                    <div class="col-md-2 box sqrt">&#8730;</div>
+                    <div class="col-md-2 box numbers">7</div>
+                    <div class="col-md-2 box numbers">8</div>
+                    <div class="col-md-2 box numbers">9</div>
+                    <div class="col-md-2 box operation">&#215;</div>
+                </div>
+                <div class="row text-center calculator_buttons">
+                    <div class="col-md-2 box squared">x&#178;</div>
+                    <div class="col-md-2 box numbers">4</div>
+                    <div class="col-md-2 box numbers">5</div>
+                    <div class="col-md-2 box numbers">6</div>
+                    <div class="col-md-2 box operation">&#8722;</div>
+                </div>
+                <div class="row text-center calculator_buttons">
+                    <div class="col-md-2 box cube">x&#179;</div>
+                    <div class="col-md-2 box numbers">1</div>
+                    <div class="col-md-2 box numbers">2</div>
+                    <div class="col-md-2 box numbers">3</div>
+                    <div class="col-md-2 box operation">&#43;</div>
+                </div>
+                <div class="row text-center calculator_buttons">
+                    <div class="col-md-2 box">&#185;&#8260; x</div>
+                    <div class="col-md-2 box">&#177;</div>
+                    <div class="col-md-2 box numbers">0</div>
+                    <div class="col-md-2 box decimal">.</div>
+                    <div class="col-md-2 box operation" id="result">=</div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-
-
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script> -->
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script defer src="js/script.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
 </body>
 
 </html>

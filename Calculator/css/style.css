@@ -1,308 +1,194 @@
-body {
+* {
     margin: 0;
     padding: 0;
 }
 
+.container-fluid {
+    min-height: 100vh;
+}
 
-
-@media only screen and (max-width:768px) and (min-width:200px) {
+@media screen and (min-width:1281px) {
     .container-fluid {
-        background-color: rgb(219, 219, 219);
-        height: 100%;
-
-
+        background: linear-gradient(to right, #000, rgb(141, 137, 137));
+        color: #fff;
     }
-
-    .header {
-        height: 30vh;
-        margin-right: 5px;
-        position: relative;
-    }
-
-    .main {
-        height: 70vh;
-    }
-
-    .main .row {
-        height: 11.2vh;
-    }
-
-    .main .box {
-        width: 10px;
-        font-size: 23px;
-        margin-top: 20px;
-        background-color: rgb(240, 239, 239);
-        height: 100%;
-        border: 2px solid rgb(219, 219, 219);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .standard {
-        font-size: 18px;
-        font-weight: 700;
-        text-align: left;
-    }
-
-    .row_standard {
-        margin-top: 10px;
-    }
-
-    .row_calculator {
-        padding-top: 4px;
-        font-size: 12px;
-    }
-
-    .calculator {
-        font-weight: 600;
-    }
-
-    .result {
-        font-size: 46px;
-        font-weight: 600;
-        margin-top: 55px;
-    }
-
-    .varieties_m {
-        text-transform: uppercase;
-        font-weight: bold;
-        margin-top: 20px;
-        position: relative;
+    .md_calculator {
+        padding-top: 7px;
         font-size: 13px;
     }
-
-    .m_thin {
-        opacity: 0.2;
+    #standard {
+        font-size: 18px;
+    }
+    .standard_md {
+        margin-top: 20px;
+    }
+    .standard_md span {
+        margin-right: 14px;
+        font-weight: 600;
+    }
+    .navigation span:first-of-type {
+        margin-left: 8%;
+    }
+    .result_md {
+        font-weight: 600;
+        font-size: 44px;
+        border: 2px solid #fff;
+        margin-top: 30px;
+    }
+    .result_text {
+        margin-top: 34px;
+        font-size: 14px;
+    }
+    .variates_m {
+        color: white;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        text-transform: uppercase;
+    }
+    .variates_m span {
+        margin-right: 30px;
+    }
+    .calculator_buttons {}
+    .calculator_buttons .box {
+        border: 2px solid #fff;
+        font-size: 30px;
+        background-color: #323232;
+    }
+    .calculator_buttons .numbers {
+        background-color: #0f1011;
         font-weight: bold;
     }
-
-    .row .numbers {
-        font-weight: bold;
-        font-size: 26px;
-        background-color: #fff;
-
-    }
-    .buttons_wrapper .box:active{
+    .buttons_wrapper .box:active {
         transform: scale(0.96);
     }
-    .buttons_wrapper .box:hover{
+    .buttons_wrapper .box:hover {
+        box-sizing: border-box;
         cursor: pointer;
         background-color: rgb(143, 143, 143);
-        border: 4px solid #fff;
-        box-shadow: 0 0 6px #fff; 
+        border: 2px solid #fff;
+        box-shadow: 0 0 6px #fff;
     }
-
-    
-    
 }
 
 @media only screen and (max-width:1280px) and (min-width:769px) {
     .container-fluid {
         background: linear-gradient(to right, #000, rgb(141, 137, 137));
         color: #fff;
-
-
     }
-
     .md_calculator {
         padding-top: 7px;
         font-size: 13px;
     }
-
     .md_calculator i {
         margin-left: 24px;
     }
-
     #standard {
         font-size: 18px;
     }
-
     .standard_md {
         margin-top: 20px;
     }
-
     .standard_md span {
         margin-right: 14px;
         font-weight: 600;
         ;
     }
-
     .navigation span:first-of-type {
         margin-left: 35%;
     }
-
     .result_md {
         font-weight: 600;
         font-size: 44px;
         border: 2px solid #fff;
-        height: 11vh;
         margin-top: 30px;
-
-
     }
-
     .result_text {
         margin-top: 34px;
         font-size: 14px;
-
     }
-
     .variates_m {
         color: white;
         margin-top: 14px;
         margin-bottom: 14px;
         text-transform: uppercase;
-
     }
-
     .variates_m span {
         margin-right: 30px;
     }
-
-    .m_thin {
-        opacity: 0.4;
-    }
-
-    .calculator_buttons {
-        height: 14.78vh;
-        margin-top: 1px;
-    }
-
+    .calculator_buttons {}
     .calculator_buttons .box {
+        border: 2px solid #fff;
         font-size: 30px;
         background-color: #323232;
-        opacity: 0.8;
-        margin-right: 2px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
-
     .calculator_buttons .numbers {
         background-color: #0f1011;
         font-weight: bold;
         font-size: 35px;
-        margin: 1px 0 1px;
-        margin-right: 2px;
         opacity: 0.9;
     }
-    .buttons_wrapper .box:active{
+    .buttons_wrapper .box:active {
         transform: scale(0.96);
     }
-    .buttons_wrapper .box:hover{
+    .buttons_wrapper .box:hover {
         cursor: pointer;
         background-color: rgb(143, 143, 143);
-        border: 4px solid #fff;
-        box-shadow: 0 0 6px #fff; 
+        border: 2px solid #fff;
+        box-shadow: 0 0 6px #fff;
     }
-
-
-
 }
 
-@media only screen and (max-width:1920px) and (min-width:1281px) {
+@media only screen and (max-width:768px) and (min-width:200px) {
     .container-fluid {
-        background: linear-gradient(to right, #000, rgb(141, 137, 137));
-        color: #fff;
+        background-color: rgb(219, 219, 219);
     }
-
-    .md_calculator {
-        padding-top: 7px;
-        font-size: 13px;
+    .header {
+        margin-right: 5px;
     }
-
-    .md_calculator i {
-        margin-left: 24px;
+    .display {
+        font-size: 40px;
+        font-weight: 600;
     }
-
-    #standard {
+    .main .box {
+        font-size: 23px;
+        background-color: rgb(240, 239, 239);
+        border: 2px solid rgb(219, 219, 219);
+    }
+    .standard {
         font-size: 18px;
+        font-weight: 700;
+        text-align: left;
     }
-
-    .standard_md {
-        margin-top: 20px;
+    .row_standard {
+        margin-top: 10px;
     }
-
-    .standard_md span {
-        margin-right: 14px;
-        font-weight: 600;
-
+    .row_calculator {
+        padding-top: 4px;
+        font-size: 12px;
     }
-
-    .navigation span:first-of-type {
-        margin-left: 8%;
+    .result {
+        font-size: 46px;
+        padding-top: 55px;
     }
-
-    .result_md {
-        font-weight: 600;
-        font-size: 44px;
-        border: 2px solid #fff;
-        height: 11vh;
-        margin-top: 30px;
-
-
-    }
-
-    .result_text {
-        margin-top: 34px;
-        font-size: 14px;
-
-    }
-
-    .variates_m {
-        color: white;
-        margin-top: 14px;
-        margin-bottom: 14px;
+    .varieties_m {
         text-transform: uppercase;
-
-    }
-
-    .variates_m span {
-        margin-right: 30px;
-    }
-
-    .m_thin {
-        opacity: 0.4;
-    }
-
-    .calculator_buttons {
-        height: 14.78vh;
-        margin-top: 1px;
-
-
-    }
-
-    .calculator_buttons .box {
-        font-size: 30px;
-        background-color: #323232;
-        opacity: 0.8;
-        margin-right: 2px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .calculator_buttons .numbers {
-        background-color: #0f1011;
         font-weight: bold;
-        font-size: 35px;
-        margin: 1px 0 1px;
-        margin-right: 2px;
-        opacity: 0.9;
-
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 14px;
     }
-    
-    .buttons_wrapper .box:active{
+    .row .numbers {
+        font-weight: bold;
+        font-size: 26px;
+        background-color: #fff;
+    }
+    .buttons_wrapper .box:active {
         transform: scale(0.96);
     }
-    .buttons_wrapper .box:hover{
+    .buttons_wrapper .box:hover {
         cursor: pointer;
         background-color: rgb(143, 143, 143);
-        border: 4px solid #fff;
-        box-shadow: 0 0 6px #fff; 
+        border: 2px solid #fff;
+        box-shadow: 0 0 6px #fff;
     }
-
-
 }
