@@ -29,7 +29,7 @@ function navMenu() {
 
 
 function navContact() {
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('#contact, #contactMe').on('click', () => {
             if ($(window).width() < 575) {
                 $('.aside-contact').css({
@@ -47,7 +47,7 @@ function navContact() {
                         'border': 'none',
                     });
                 }, 3400);
-            } else{
+            } else {
                 $('.aside-contact').css({
                     'transform': 'scale(1.2)',
                     'margin-top': '50px',
