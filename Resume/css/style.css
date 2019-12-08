@@ -433,7 +433,7 @@ body {
 .aside-skills-item .html:before {
   content: "";
   background-color: #2fa59f;
-  width: 90%;
+  width: 80%;
   height: 16px;
   position: absolute;
   border-radius: 4px;
@@ -442,7 +442,7 @@ body {
 .aside-skills-item .css:before {
   content: "";
   background-color: #2fa59f;
-  width: 80%;
+  width: 65%;
   height: 16px;
   position: absolute;
   border-radius: 4px;
@@ -451,7 +451,7 @@ body {
 .aside-skills-item .js:before {
   content: "";
   background-color: #2fa59f;
-  width: 70%;
+  width: 50%;
   height: 16px;
   position: absolute;
   border-radius: 4px;
@@ -460,7 +460,7 @@ body {
 .aside-skills-item .scss:before {
   content: "";
   background-color: #2fa59f;
-  width: 70%;
+  width: 60%;
   height: 16px;
   position: absolute;
   border-radius: 4px;
@@ -469,7 +469,7 @@ body {
 .aside-skills-item .bootstrap:before {
   content: "";
   background-color: #2fa59f;
-  width: 70%;
+  width: 60%;
   height: 16px;
   position: absolute;
   border-radius: 4px;
@@ -478,7 +478,7 @@ body {
 .aside-skills-item .photoshop:before {
   content: "";
   background-color: #2fa59f;
-  width: 80%;
+  width: 70%;
   height: 16px;
   position: absolute;
   border-radius: 4px;
