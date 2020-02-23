@@ -2,9 +2,19 @@ let btnLeft = document.querySelector('.slider-left');
 let btnRight = document.querySelector('.slider-right');
 let left = 0;
 let btn = document.getElementById('send');
+let timer;
 btnLeft.addEventListener('click', sliderLeft);
+btnLeft.addEventListener('mouseenter', stopSlider);
+btnLeft.addEventListener('mouseleave', startSlider);
 btnRight.addEventListener('click', sliderRight);
+btnRight.addEventListener('mouseenter', stopSlider);
+btnRight.addEventListener('mouseleave', startSlider);
 btn.addEventListener('click', send);
+
+
+window.onload = function() {
+    autoSlider();
+}
 
 
 function sliderLeft() {
@@ -33,6 +43,18 @@ function send() {
         setTimeout(function() {
             document.querySelector('.full-img').style.display = 'none';
             document.querySelector('.modal').style.display = 'none';
-        }, 5000)
+        }, 2500)
     }
+};
+
+function autoSlider() {
+    timer = setInterval(sliderLeft, 1500)
+};
+
+function stopSlider() {
+    clearInterval(timer)
+};
+
+function startSlider() {
+    autoSlider()
 };
