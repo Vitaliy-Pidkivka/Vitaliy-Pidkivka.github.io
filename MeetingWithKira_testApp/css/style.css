@@ -25,7 +25,6 @@ body {
 .slider {
     max-width: 256px;
     height: 128px;
-    border: 5px solid black;
     border-radius: 20px;
     overflow: hidden;
     margin: 0 auto;
@@ -33,12 +32,15 @@ body {
     background-color: lightseagreen;
     transform: scale(1.6);
     box-shadow: 10px 10px 20px lightskyblue, -10px -10px 20px lightskyblue, 10px -10px 20px lightskyblue, -10px 10px 20px lightskyblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .line {
     width: 1152px;
     position: relative;
     transition: all 0.7s ease;
+    left: 0;
 }
 
 .line img {
