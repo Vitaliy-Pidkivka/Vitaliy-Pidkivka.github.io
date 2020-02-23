@@ -4,7 +4,7 @@ body {
 }
 
 .main-slider {
-    background-color: lightslategrey;
+    background-image: url(https://images.wallpaperscraft.ru/image/fon_tekstura_temnyy_kvadraty_forma_50347_1920x1080.jpg);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -99,7 +99,10 @@ line:after {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: yellowgreen;
+    background-image: url(https://images.wallpaperscraft.ru/image/fon_tekstura_temnyy_kvadraty_forma_50347_1920x1080.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .walk,
