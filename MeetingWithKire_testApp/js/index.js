@@ -91,8 +91,6 @@ function sliderRight() {
 };
 
 
-
-
 let btn = document.getElementById('send');
 btn.addEventListener('click', send);
 
