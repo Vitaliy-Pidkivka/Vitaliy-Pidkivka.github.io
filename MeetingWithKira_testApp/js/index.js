@@ -43,7 +43,7 @@ function send() {
         setTimeout(function() {
             document.querySelector('.full-img').style.display = 'none';
             document.querySelector('.modal').style.display = 'none';
-        }, 2500)
+        }, 1500)
     }
 };
 
