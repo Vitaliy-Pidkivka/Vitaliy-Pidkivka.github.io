@@ -36,8 +36,8 @@ function sliderRight() {
 
 function send() {
     let walk = document.querySelector('.walk');
-    if (walk.value == 'never') {
-        alert('Wrong choice, please try again')
+    if (walk.value == 'Hikolu') {
+        alert('Неправильна відпоповідь, попробуй знову ))')
     } else {
         document.querySelector('.full-img').style.display = 'block';
         setTimeout(function() {
