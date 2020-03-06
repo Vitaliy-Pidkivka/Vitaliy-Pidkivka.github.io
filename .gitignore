@@ -1,9 +1,11 @@
-**.log
-**.exe
-**.zip
-**.psd
-**.pdf
-**node_modules
-**.scss
-**.sass
-**.map
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# Dependency directories
+node_modules/
+package-lock.json
+.sass-cache/
+.vscode/
+#wp
+ai1wm-backups/
+nbproject/
