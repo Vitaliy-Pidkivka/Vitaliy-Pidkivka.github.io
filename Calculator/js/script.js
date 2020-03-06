@@ -106,7 +106,6 @@ function decimal() {
     })
 };
 
-
 function clear(id) {
     if (id === 'ce') {
         display[0].innerHTML = '0';
@@ -142,7 +141,6 @@ function toSquared() {
         } else {
             localDecimalMemory = '0';
         }
-
     })
 }
 
@@ -154,7 +152,6 @@ function toCube() {
         } else {
             localDecimalMemory = '0';
         }
-
     })
 }
 
@@ -166,6 +163,5 @@ function toSqrt() {
         } else {
             localDecimalMemory = '0';
         }
-
     })
 }
