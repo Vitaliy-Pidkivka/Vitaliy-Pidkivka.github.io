@@ -192,3 +192,20 @@
         box-shadow: 0 0 6px #fff;
     }
 }
+.fa{
+    font-size: 30px !important;
+}
+i{
+    cursor: pointer;
+    width: 40px;
+
+    transition:  color .3s ease;
+}
+i:hover{
+    transform: scale(1.1);
+    color: rgb(109, 186, 189);
+}
+i:active{
+    transform: scale(.9);
+    color: rgb(109, 186, 189);
+}

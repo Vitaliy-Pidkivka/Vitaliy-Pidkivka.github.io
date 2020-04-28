@@ -8,9 +8,13 @@ let numbersBtn = document.querySelectorAll('.numbers'),
     squaredBtns = document.querySelectorAll('.squared'),
     cubeBtn = document.querySelector('.cube'),
     sqrtBtns = document.querySelectorAll('.sqrt'),
+    closeBtn = document.querySelectorAll('.times'),
     MemoryCurrentNumber = "0",
     MemoryNewNumber = false,
     MemoryPendingOperation = '';
+
+
+
 
 for (let i = 0; i < numbersBtn.length; i++) {
     let number = numbersBtn[i];
@@ -70,7 +74,7 @@ function numberPress(number) {
 
 function operations(op) {
     let lolacOperationMemory = display[0].innerHTML || display[1].innerHTML;
-    if (MemoryNewNumber && MemoryPendingOperation !== '=') {
+     if (MemoryNewNumber && MemoryPendingOperation !== '=') {
         display[0].innerHTML = MemoryCurrentNumber;
         display[1].innerHTML = MemoryCurrentNumber;
     } else {
@@ -83,7 +87,9 @@ function operations(op) {
             MemoryCurrentNumber /= parseFloat(lolacOperationMemory);
         } else if (MemoryPendingOperation === '−') {
             MemoryCurrentNumber -= parseFloat(lolacOperationMemory);
-        } else {
+        } else if (MemoryPendingOperation === '%') {
+            MemoryCurrentNumber = parseFloat(MemoryCurrentNumber % lolacOperationMemory);
+        }  else {
             MemoryCurrentNumber = parseFloat(lolacOperationMemory);
         }
 
@@ -165,3 +171,14 @@ function toSqrt() {
         }
     })
 }
+
+function closeWindow() {
+    closeBtn.forEach(item => {
+        item.addEventListener('click', function(e) {
+            if (window.confirm('Закрыть окно?')) {
+                window.close()
+            }
+        })
+    })
+};
+closeWindow();
