@@ -9,6 +9,7 @@
     };
 
     $(document).ready(function () {
+        document.body.style.display = "block";
         checkScreenSize();
         imgToBg();
         initMenu();
@@ -20,16 +21,16 @@
         toggleActiveHeaderItem();
         lazyLoad();
         questionsTabs();
+        showLightbox();
+        init();
     }); // ready
 
     $(window).on("resize", function () {
         checkScreenSize();
     }); // resize
-    $(window).on("scroll", function () {
-    }); // scroll
+    $(window).on("scroll", function () {}); // scroll
 
     $(window).on("load", function () {}); // load
-
     if (window.NodeList && !NodeList.prototype.forEach) {
         NodeList.prototype.forEach = Array.prototype.forEach;
     } //polyfill
@@ -46,7 +47,6 @@
     function imgToBg() {
         $(".bg-img").each(function () {
             var $img = $(this).find("> img");
-
             if ($img.length) {
                 $(this).css("background-image", "url(" + $img.attr("src") + ")");
                 $img.hide();
@@ -100,6 +100,7 @@
             $(this).toggleClass("menu-opened");
             $(".header-menu").toggleClass("menu-opened");
             $("body").toggleClass("menu-opened");
+            $(".black-mask").toggleClass("menu-opened");
         });
     }
 
@@ -121,6 +122,14 @@
                 $(".open-menu").removeClass("menu-opened");
                 $(".black-mask").removeClass("menu-opened");
             }
+        });
+        $(".black-mask").on("click", function () {
+            $("html").removeClass("menu-opened");
+            $("body").removeClass("menu-opened");
+            $(".header-menu").removeClass("menu-opened");
+            $(".open-menu").removeClass("menu-opened");
+            $(".black-mask").removeClass("menu-opened");
+            $(".lightbox").removeClass("visible");
         });
     }
 
@@ -253,5 +262,279 @@
                 }
             });
         }
+    }
+    function showLightbox() {
+        const lightbox = $(".lightbox");
+        if (lightbox) {
+            setTimeout(function () {
+                $(".lightbox").addClass("visible");
+                $(".black-mask").addClass("menu-opened");
+                $("html").addClass("menu-opened");
+                if ($(".lightbox-label").offset().top < 0) {
+                    let lightboxTop = $(".lightbox-label").offset().top;
+                    let defaultTop = lightboxTop.toString().slice(1);
+                    $(".lightbox").css({ top: +defaultTop + 100 + "px", transform: "translate(-50%,0)" });
+                }
+            }, 4000);
+        }
+    }
+    function init() {
+        // Basic options for a simple Google Map
+        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+        var mapOptions = {
+            // How zoomed in you want the map to start at (always required)
+            zoom: 11,
+
+            // The latitude and longitude to center the map (always required)
+            center: new google.maps.LatLng(40.67, -73.94), // New York
+
+            // How you would like to style the map.
+            // This is where you would paste any style found on Snazzy Maps.
+            styles: [
+                {
+                    featureType: "administrative",
+                    elementType: "geometry",
+                    stylers: [
+                        {
+                            color: "#a7a7a7",
+                        },
+                    ],
+                },
+                {
+                    featureType: "administrative",
+                    elementType: "labels.text.fill",
+                    stylers: [
+                        {
+                            visibility: "on",
+                        },
+                        {
+                            color: "#737373",
+                        },
+                    ],
+                },
+                {
+                    featureType: "landscape",
+                    elementType: "geometry.fill",
+                    stylers: [
+                        {
+                            visibility: "on",
+                        },
+                        {
+                            color: "#ffffff",
+                        },
+                    ],
+                },
+                {
+                    featureType: "poi",
+                    elementType: "geometry.fill",
+                    stylers: [
+                        {
+                            visibility: "on",
+                        },
+                        {
+                            color: "#dadada",
+                        },
+                    ],
+                },
+                {
+                    featureType: "poi",
+                    elementType: "labels",
+                    stylers: [
+                        {
+                            visibility: "off",
+                        },
+                    ],
+                },
+                {
+                    featureType: "poi",
+                    elementType: "labels.icon",
+                    stylers: [
+                        {
+                            visibility: "off",
+                        },
+                    ],
+                },
+                {
+                    featureType: "road",
+                    elementType: "geometry",
+                    stylers: [
+                        {
+                            visibility: "on",
+                        },
+                        {
+                            color: "#ffa000",
+                        },
+                    ],
+                },
+                {
+                    featureType: "road",
+                    elementType: "geometry.fill",
+                    stylers: [
+                        {
+                            visibility: "on",
+                        },
+                        {
+                            color: "#ffa000",
+                        },
+                    ],
+                },
+                {
+                    featureType: "road",
+                    elementType: "geometry.stroke",
+                    stylers: [
+                        {
+                            color: "#ffa000",
+                        },
+                        {
+                            visibility: "on",
+                        },
+                    ],
+                },
+                {
+                    featureType: "road",
+                    elementType: "labels",
+                    stylers: [
+                        {
+                            visibility: "off",
+                        },
+                    ],
+                },
+                {
+                    featureType: "road",
+                    elementType: "labels.text",
+                    stylers: [
+                        {
+                            visibility: "off",
+                        },
+                    ],
+                },
+                {
+                    featureType: "road",
+                    elementType: "labels.text.fill",
+                    stylers: [
+                        {
+                            color: "#ffffff",
+                        },
+                        {
+                            visibility: "off",
+                        },
+                    ],
+                },
+                {
+                    featureType: "road",
+                    elementType: "labels.text.stroke",
+                    stylers: [
+                        {
+                            visibility: "off",
+                        },
+                        {
+                            color: "#ffa000",
+                        },
+                    ],
+                },
+                {
+                    featureType: "road",
+                    elementType: "labels.icon",
+                    stylers: [
+                        {
+                            visibility: "off",
+                        },
+                    ],
+                },
+                {
+                    featureType: "road.highway",
+                    elementType: "geometry.fill",
+                    stylers: [
+                        {
+                            color: "#ffa000",
+                        },
+                    ],
+                },
+                {
+                    featureType: "road.highway",
+                    elementType: "geometry.stroke",
+                    stylers: [
+                        {
+                            visibility: "on",
+                        },
+                        {
+                            color: "#ffa000",
+                        },
+                    ],
+                },
+                {
+                    featureType: "road.arterial",
+                    elementType: "geometry.fill",
+                    stylers: [
+                        {
+                            color: "#ffa000",
+                        },
+                    ],
+                },
+                {
+                    featureType: "road.arterial",
+                    elementType: "geometry.stroke",
+                    stylers: [
+                        {
+                            color: "#ffa000",
+                        },
+                    ],
+                },
+                {
+                    featureType: "road.local",
+                    elementType: "geometry.fill",
+                    stylers: [
+                        {
+                            visibility: "on",
+                        },
+                        {
+                            color: "#ffcf7f",
+                        },
+                        {
+                            weight: 1.8,
+                        },
+                    ],
+                },
+                {
+                    featureType: "road.local",
+                    elementType: "geometry.stroke",
+                    stylers: [
+                        {
+                            color: "#ffa000",
+                        },
+                    ],
+                },
+                {
+                    featureType: "transit",
+                    elementType: "all",
+                    stylers: [
+                        {
+                            color: "#808080",
+                        },
+                        {
+                            visibility: "off",
+                        },
+                    ],
+                },
+                {
+                    featureType: "water",
+                    elementType: "geometry.fill",
+                    stylers: [
+                        {
+                            color: "#d3d3d3",
+                        },
+                    ],
+                },
+            ],
+        };
+        var mapElement = document.getElementById("map");
+
+        var map = new google.maps.Map(mapElement, mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(40.67, -73.94),
+            map: map,
+            title: "Snazzy!",
+        });
     }
 })(jQuery);
