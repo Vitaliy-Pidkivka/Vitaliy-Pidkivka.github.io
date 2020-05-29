@@ -10882,7 +10882,8 @@ img.lazyload {
   .btn-red {
     background: #f31131; }
     .btn-red:hover {
-      background: #a72323; }
+      background: #a72323;
+      color: #fff; }
 
 /* header */
 .header {
@@ -11187,7 +11188,9 @@ section:not(.main-screen) {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-box-shadow: 0 0 15px #909595;
+          box-shadow: 0 0 15px #909595; }
   .ideas .idea .idea-btn {
     background: #fff;
     padding: 15px;
@@ -11220,7 +11223,9 @@ section:not(.main-screen) {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 28px;
-  height: calc(100% - 28px); }
+  height: calc(100% - 28px);
+  -webkit-box-shadow: 0 0 15px #909595;
+          box-shadow: 0 0 15px #909595; }
   @media (min-width: 768px) and (max-width: 991.98px) {
     .locations .location {
       -webkit-box-orient: vertical;
@@ -11368,6 +11373,8 @@ section:not(.main-screen) {
   margin-bottom: 20px; }
 
 .advantages .advantage-image {
+  -webkit-box-shadow: 0 0 6px #000;
+          box-shadow: 0 0 6px #000;
   position: relative;
   width: 105px;
   height: 105px;
@@ -11428,6 +11435,8 @@ section:not(.main-screen) {
   .message .message-inner {
     min-height: 495px; }
   .message .contact-form {
+    -webkit-box-shadow: 0 0 10px #000;
+            box-shadow: 0 0 10px #000;
     position: absolute;
     max-width: 395px;
     width: 100%;
@@ -12451,5 +12460,112 @@ body.compensate-for-scrollbar {
     right: 110px; }
   .fancybox-thumbs__list a {
     max-width: calc(100% - 10px); } }
+
+.datepicker {
+  position: relative; }
+  .datepicker.active .arrow {
+    -webkit-transform: translateY(-50%) rotate(540deg);
+            transform: translateY(-50%) rotate(540deg); }
+  .datepicker input {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    padding-right: 30px; }
+    .datepicker input:focus {
+      border-color: #000;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+  .datepicker .arrow {
+    color: #888;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    line-height: 20px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    border: 1px solid #000;
+    border-radius: 50%; }
+    .datepicker .arrow::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 6px;
+      top: 50%;
+      width: 6px;
+      height: 1px;
+      background: #000;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .datepicker .arrow::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 2px;
+      top: 50%;
+      width: 6px;
+      height: 1px;
+      background: #000;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+
+.ui-datepicker {
+  position: absolute !important;
+  background: #fff;
+  width: auto;
+  top: 39px !important;
+  left: 0 !important;
+  padding: 20px;
+  width: 220px;
+  -webkit-box-shadow: 0 2px 20px #909595;
+          box-shadow: 0 2px 20px #909595; }
+
+.ui-datepicker-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.ui-datepicker-calendar {
+  width: 100%; }
+
+.ui-datepicker-next {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  font-size: 12px;
+  cursor: pointer; }
+  .ui-datepicker-next:hover {
+    font-weight: bold; }
+
+.ui-datepicker-prev {
+  font-size: 12px;
+  cursor: pointer; }
+  .ui-datepicker-prev:hover {
+    font-weight: bold; }
+
+.ui-datepicker-title {
+  margin: 0 4px; }
 
 /*# sourceMappingURL=styles.css.map */

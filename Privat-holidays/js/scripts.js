@@ -19,6 +19,7 @@
         customDropdown();
         sliders();
         initLocationGallery();
+        initDatepicker();
     }); // ready
 
     $(window).on("resize", function () {
@@ -225,6 +226,7 @@
     }
 
     function customDropdown() {
+        
         $(".dropdown").click(function () {
             $(this).attr("tabindex", 1).focus();
             $(this).toggleClass("active");
@@ -243,6 +245,27 @@
     function initLocationGallery() {
         $('[data-fancybox="gallery"]').fancybox({
             // Options will go here
+        });
+    }
+
+    function initDatepicker() {
+        $(".datepicker").each(function () {
+            var $this = $(this),
+                $input = $this.find(".form-control");
+            $input.on("click", function () {
+                $this.addClass("active");
+                $this.append($(".ui-datepicker"))
+                // $this.append($datepicker);
+                // $datepicker.remove();
+            });
+            $this.focusout(function(){
+                $this.removeClass('active')
+            })
+            $input.datepicker({
+                showOtherMonths: true,
+                changeMonth: false,
+                dateFormat: "dd M yy",
+            });
         });
     }
 })(jQuery);
