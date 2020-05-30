@@ -276,6 +276,16 @@
                     $(".lightbox").css({ top: +defaultTop + 100 + "px", transform: "translate(-50%,0)" });
                 }
             }, 4000);
+            setTimeout(function () {
+                $(".lightbox").removeClass("visible");
+                $(".black-mask").removeClass("menu-opened");
+                $("html").removeClass("menu-opened");
+                if ($(".lightbox-label").offset().top < 0) {
+                    let lightboxTop = $(".lightbox-label").offset().top;
+                    let defaultTop = lightboxTop.toString().slice(1);
+                    $(".lightbox").css({ top: +defaultTop + 100 + "px", transform: "translate(-50%,0)" });
+                }
+            }, 10000);
         }
     }
     function init() {
