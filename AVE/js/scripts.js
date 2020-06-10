@@ -155,16 +155,6 @@
     function openMenu() {
         $(".open-menu").on("click", function (e) {
             e.preventDefault();
-            $(this).toggleClass("menu-opened");
-            $(".header-menu").toggleClass("menu-opened");
-            $("body").toggleClass("menu-opened");
-        });
-    }
-
-    function openMenu() {
-        $(".open-menu").on("click", function (e) {
-            e.preventDefault();
-            // $(this).toggleClass('menu-opened');
             $(".header-menu").toggleClass("menu-opened");
             $("body").toggleClass("menu-opened");
             $(".black-mask").toggleClass("menu-opened");
