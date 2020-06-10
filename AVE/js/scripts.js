@@ -173,10 +173,10 @@
 
     function closeMenu() {
         $(".header-menu a").on("click", function (e) {
-            e.preventDefault();
+            // e.preventDefault();
         });
         $(".header-menu li:not(.has-drop) a, .black-mask").on("click", function (e) {
-            e.preventDefault();
+            // e.preventDefault();
             $("html").removeClass("menu-opened");
             $("body").removeClass("menu-opened");
             $(".header-menu").removeClass("menu-opened");
