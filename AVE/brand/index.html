@@ -7,18 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
     <title>Ave</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key="></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/select2.full.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/select2.full.js"></script>
+    <script src="../js/scripts.js"></script>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper white-header">
         <header id="header" class="header">
             <div class="header-row">
                 <div class="container">
@@ -132,7 +132,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="/brand">The brand</a>
+                                    <a href="#">The brand</a>
                                 </li>
                                 <li>
                                     <a href="#">Local stores</a>
@@ -220,218 +220,85 @@
         </header>
         <!-- / header -->
         <main class="content">
-            <section class="main-screen lazyload-img-to-bg">
-                <img data-src="images/bg-main-screen-1.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
+            <section class="main-screen not-full lazyload-img-to-bg">
+                <img data-src="../images/bg-main-screen-02.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
+                <div class="bg-mask"></div>
                 <div class="container-large">
                     <div class="main-screen-inner">
-                        <h1 class="main-screen-title">
-                            <span>A</span>
-                            <span>V</span>
-                            <span>E</span>
-                        </h1>
-                        <div class="main-screen-btn">
-                            <a class="btn" href="#">Shop men's collection</a>
-                        </div>
+                        <h1>the <span>brand</span></h1>
+                        <p class="main-screen-subtitle">company slogan goes here</p>
                     </div>
                 </div>
             </section>
             <!-- / main-screen -->
-            <div class="shop-cards">
-                <span class="sr-only">Vitalii Pidkivka</span>
-                <div class="container-large">
-                    <ul class="shop-cards-menu">
-                        <li><a href="#">popular</a></li>
-                        <li><a href="#">new arrivals</a></li>
-                        <li><a href="#">best sellers</a></li>
-                        <li><a href="#">special offers</a></li>
-                        <li><a href="#">coming soon</a></li>
-                    </ul>
+            <section class="clothing">
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-12 col-lg-6">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="shop-card bg-img">
-                                        <img src="images/img-shop-cards-01.jpg" alt="">
-                                        <div class="price">
-                                            <span><sup>£</sup>89.99</span>
-                                        </div>
-                                        <div class="miniatures">
-                                            <img src="images/img-shop-cards-02.jpg" alt="">
-                                            <img src="images/img-shop-cards-01.jpg" alt="">
-                                        </div>
-                                        <div class="card-footer">
-                                            <h6>Womens burnt orange casual tee  £29.95</h6>
-                                            <p>Classic casual t-shirt for women on the move.   100% cotton.</p>
-                                            <ul class="card-buttons">
-                                                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </a></li>
-                                                <li><a href="#"><i class="fa fa-compress" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
+                        <div class="col-md-6">
+                            <div class="col-md-12">
+                                <div class="clothing-box clothing-item">
+                                    <div class="item-picture lazyload-img-to-bg">
+                                        <img data-src="../images/img-clothing-01.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="shop-card bg-img">
-                                        <img src="images/img-shop-cards-02.jpg" alt="">
-                                        <div class="price">
-                                            <span><sup>£</sup>47.50</span>
-                                        </div>
-                                        <div class="miniatures">
-                                            <img src="images/img-shop-cards-02.jpg" alt="">
-                                            <img src="images/img-shop-cards-01.jpg" alt="">
-                                        </div>
-                                        <div class="card-footer">
-                                            <h6>Womens burnt orange casual tee  £29.95</h6>
-                                            <p>Classic casual t-shirt for women on the move.   100% cotton.</p>
-                                            <ul class="card-buttons">
-                                                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </a></li>
-                                                <li><a href="#"><i class="fa fa-compress" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="clothing-box clothing-item">
+                                    <div class="item-picture lazyload-img-to-bg">
+                                        <img data-src="../images/img-clothing-02.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
                                     </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="shop-card large bg-img">
-                                        <img src="images/img-shop-cards-04.jpg" alt="">
-                                        <div class="price">
-                                            <span class="with-separator"><sup>£</sup>107</span>
-                                            <span><sup>£</sup>89.99</span>
-                                        </div>
-                                        <div class="miniatures">
-                                            <img src="images/img-shop-cards-04.jpg" alt="">
-                                            <img src="images/img-shop-cards-01.jpg" alt="">
-                                        </div>
-                                        <div class="card-footer">
-                                            <h6>Womens burnt orange casual tee  £29.95</h6>
-                                            <p>Classic casual t-shirt for women on the move.   100% cotton.</p>
-                                            <ul class="card-buttons">
-                                                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </a></li>
-                                                <li><a href="#"><i class="fa fa-compress" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <h3>our values, vision and strategy</h3>
+                                    <h5>The above image would be a great place for an advertising video</h5>
+                                    <p>
+                                        Cras maximus venenatis malesuada. Nulla sagittis elit felis, ac facilisis quam ornare aliquam. Etiam cursus odio vitae dui dignissim, sed tempus lacus tincidunt et donec sapien velit, rhoncus eu nulla a,
+                                        molestie tempus mi maecenas sagittis ornare. Pellentesque sapien mi, <strong>tincidunt nec magna vitae</strong>, volutpat elementum odioni lorem Aliquam tempor massa vitae augue mattis tempor id in ante ut
+                                        augue erat, luctus eil.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="shop-card large bg-img">
-                                        <img src="images/img-shop-cards-03.jpg" alt="">
-                                        <div class="price">
-                                            <span><sup>£</sup>69.95</span>
-                                        </div>
-                                        <div class="miniatures">
-                                            <img src="images/img-shop-cards-03.jpg" alt="">
-                                            <img src="images/img-shop-cards-01.jpg" alt="">
-                                        </div>
-                                        <div class="card-footer">
-                                            <h6>Womens burnt orange casual tee  £29.95</h6>
-                                            <p>Classic casual t-shirt for women on the move.   100% cotton.</p>
-                                            <ul class="card-buttons">
-                                                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </a></li>
-                                                <li><a href="#"><i class="fa fa-compress" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                        <div class="col-md-6">
+                            <div class="col-md-12">
+                                <div class="clothing-box clothing-item margin">
+                                    <h3>hand designed clothing</h3>
+                                    <h5>established in 2013, avenue fashion Sed dictum elit vel sapien luctus eras</h5>
+                                    <p>
+                                        Praesent feugiat malesuada tristique maecenas rhoncus diam eget quam vestibulim consectetur, id condimentum leo porttitor. Cum sociis natoque penatibus eta magnis disut parturient montes, nascetur ridiculus
+                                        mus. Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.
+                                    </p>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="shop-card bg-img">
-                                        <img src="images/img-shop-cards-05.jpg" alt="">
-                                        <div class="price">
-                                            <span><sup>£</sup>29.95</span>
-                                        </div>
-                                        <div class="miniatures">
-                                            <img src="images/img-shop-cards-05.jpg" alt="">
-                                            <img src="images/img-shop-cards-01.jpg" alt="">
-                                        </div>
-                                        <div class="card-footer">
-                                            <h6>Womens burnt orange casual tee  £29.95</h6>
-                                            <p>Classic casual t-shirt for women on the move.   100% cotton.</p>
-                                            <ul class="card-buttons">
-                                                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </a></li>
-                                                <li><a href="#"><i class="fa fa-compress" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="clothing-box clothing-item">
+                                    <div class="item-picture lazyload-img-to-bg">
+                                        <img data-src="../images/img-clothing-03.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
                                     </div>
+                                    <h3>Ethical trading</h3>
+                                    <h5>we oversee the working conditions of the people in the supply chain</h5>
+                                    <p>
+                                        Nullam dapibus consectetur neque, faucibus porttitor purus iaculis sed. Aenean eras dapibus augue, eget dignissim dui maecenas et rhoncus mim, vel semper arcu lorem Pellentesque congue justo esteir pellentesque
+                                        aliquet massa eget posuere tincidunt. Cras viverra ullamcorper nunc accumsan hendrerit. <a href="#">A link <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                    </p>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="shop-card bg-img">
-                                        <img src="images/img-shop-cards-05.jpg" alt="">
-                                        <div class="price">
-                                            <span><sup>£</sup>34.79</span>
-                                        </div>
-                                        <div class="miniatures">
-                                            <img src="images/img-shop-cards-05.jpg" alt="">
-                                            <img src="images/img-shop-cards-01.jpg" alt="">
-                                        </div>
-                                        <div class="card-footer">
-                                            <h6>Womens burnt orange casual tee  £29.95</h6>
-                                            <p>Classic casual t-shirt for women on the move.   100% cotton.</p>
-                                            <ul class="card-buttons">
-                                                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </a></li>
-                                                <li><a href="#"><i class="fa fa-compress" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="clothing-box brands">
+                                    <div class="brands-item lazyload-img">
+                                        <img data-src="../images/img-clothing-brand-01.png" src="#" alt="image description" loading="lazy" class="lazyload" />
+                                    </div>
+                                    <div class="brands-item lazyload-img">
+                                        <img data-src="../images/img-clothing-brand-02.png" src="#" alt="image description" loading="lazy" class="lazyload" />
+                                    </div>
+                                    <div class="brands-item lazyload-img">
+                                        <img data-src="../images/img-clothing-brand-03.png" src="#" alt="image description" loading="lazy" class="lazyload" />
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /shop-cards -->
-            <section class="section-lookbook">
-                <div class="row">
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="lookbook bg-img">
-                            <img src="images/img-lookbook-01.jpg" alt="">
-                           <div class="lookbook-inner">
-                            <h3><span>Men's</span><span>lookbook</span></h3>
-                            <p>Lorem ipsum dolor sit amet eras facilisis  consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui. Elementum metus facilisis ut phasellu.</p>
-                            <div class="lookbook-btn">
-                                <a href="#" class="btn">view now</a>
-                            </div>
-                           </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="lookbook bg-img">
-                            <img src="images/img-lookbook-02.jpg" alt="">
-                           <div class="lookbook-inner">
-                            <h3><span>women's </span><span>lookbook</span></h3>
-                            <p>Lorem ipsum dolor sit amet eras facilisis  consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui. Elementum metus facilisis ut phasellu.</p>
-                            <div class="lookbook-btn">
-                                <a href="#" class="btn">view now</a>
-                            </div>
-                           </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="lookbook bg-img">
-                            <img src="images/img-lookbook-03.jpg" alt="">
-                         <div class="lookbook-inner">
-                            <h3><span>your </span><span>lookbook</span></h3>
-                            <p>Lorem ipsum dolor sit amet eras facilisis  consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui. Elementum metus facilisis ut phasellu.</p>
-                            <div class="lookbook-btn">
-                                <a href="#" class="btn">view now</a>
-                            </div>
-                         </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- / clothing -->
         </main>
         <!-- / content -->
         <footer id="footer" class="footer">
