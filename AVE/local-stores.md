@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="format-detection" content="telephone=no">
-        <title>Ave</title>
-        <link rel="stylesheet" href="../css/styles.css">
-        <script src="../js/jquery-1.12.4.min.js"></script>
-        <script src="../js/slick.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key="></script>
-        <script src="../js/jquery.validate.min.js"></script>
-        <script src="../js/select2.full.js"></script>
-        <script src="../js/scripts.js"></script>
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Ave</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/select2.full.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
 
 <body>
     <div class="wrapper white-header">
@@ -220,188 +221,148 @@
         <!-- / header -->
         <main class="content">
             <section class="main-screen not-full lazyload-img-to-bg">
-                <img data-src="../images/bg-main-screen-02.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
+                <img data-src="images/bg-main-screen-02.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
                 <div class="bg-mask"></div>
                 <div class="container-large">
                     <div class="main-screen-inner">
-                        <h1>Our <span>Lookbook</span></h1>
-                        <p class="main-screen-subtitle">Latest Posts - mens & womens</p>
+                        <h1>local <span>stores</span></h1>
+                        <p class="main-screen-subtitle">find a store near you</p>
                     </div>
                 </div>
             </section>
             <!-- / main-screen -->
-            <div class="shop-cards">
-                <span class="sr-only">Vitalii Pidkivka</span>
-                <div class="container-large">
-                    <ul class="shop-cards-menu">
-                        <li><a href="#">latest</a></li>
-                        <li><a href="#">most liked </a></li>
-                        <li><a href="#">best sellers </a></li>
-                        <li><a href="#">price low to high </a></li>
-                        <li><a href="#">price high to low</a></li>
-                    </ul>
-                    <div class="row row-second">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="shop-card bg-img">
-                                <img src="../images/img-shop-cards-01.jpg" alt="" />
-                                <div class="price">
-                                    <span><sup>ref</sup>m1</span>
-                                </div>
-                                <div class="card-buttons">
-                                    <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-gratipay" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
+            <section class="cities">
+                <div class="container">
+                    <div class="row tabs-item">
+                        <div class="col-md-4 tab active">
+                            <h3>london</h3>
+                            <h5>180-182 regent street, london, w1b 5bt</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</p>
+                            <a href="#" class="btn">view details</a>
                         </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="shop-card bg-img">
-                                <img src="../images/img-shop-cards-02.jpg" alt="" />
-                                <div class="price">
-                                    <span><sup>ref</sup>w1</span>
-                                </div>
-                                <div class="card-buttons">
-                                    <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-gratipay" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
+                        <div class="col-md-4 tab">
+                            <h3>new york</h3>
+                            <h5>109 Columbus Circle, New York, NY 10023</h5>
+                            <p>Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.</p>
+                            <a href="#" class="btn">view details</a>
                         </div>
-                        <div class="col-md-6">
-                            <div class="shop-card large-second bg-img">
-                                <img src="../images/img-shop-cards-06.jpg" alt="" />
-                                <div class="card-content">
-                                    <h2>Jane's <span>lookbook</span></h2>
-                                    <h5>get the look for under £200!</h5>
-                                    <p>We invited actress Jane Marshall to join us for the day and choose her perfect outfit from our vast range of womens fashion.</p>
-                                    <p>This is of course not true as this is just a design for a website and this is simply filler text.</p>
-                                    <a href="#" class="btn">view now</a>
-                                </div>
-                                <div class="mask"><span class="sr-only">mask</span></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="shop-card bg-img">
-                                <img src="../images/img-shop-cards-03.jpg" alt="" />
-                                <div class="price">
-                                    <span><sup>ref</sup>mj1</span>
-                                </div>
-                                <div class="card-buttons">
-                                    <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-gratipay" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="shop-card bg-img">
-                                <img src="../images/img-shop-cards-04.jpg" alt="" />
-                                <div class="price">
-                                    <span><sup>ref</sup>m2</span>
-                                </div>
-                                <div class="card-buttons">
-                                    <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-gratipay" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="shop-card bg-img">
-                                <img src="../images/img-shop-cards-05.jpg" alt="" />
-                                <div class="price">
-                                    <span><sup>ref</sup>w2</span>
-                                </div>
-                                <div class="card-buttons">
-                                    <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-gratipay" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="shop-card bg-img">
-                                <img src="../images/img-shop-cards-05.jpg" alt="" />
-                                <div class="price">
-                                    <span><sup>ref</sup>w3</span>
-                                </div>
-                                <div class="card-buttons">
-                                    <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-gratipay" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-9">
-                            <div class="shop-card large-second bg-img">
-                                <img src="../images/img-shop-cards-07.jpg" alt="" />
-                                <div class="card-content flex">
-                                    <div class="card-content-box">
-                                        <h2>Win <span> a new lookbook</span></h2>
-                                        <h5>add looks or items to your lookbook for a chance of winning</h5>
-                                        <p>
-                                            See an item or a complete look you like, click the  button to add it to your lookbook and you’ll be automatically entered to our monthly draw where one winner gets a <strong>£300</strong> gift voucher to
-                                            spend on our website!
-                                        </p>
-                                        <p>Terms: No purchase necessary. Vouchers are non-transferable and no cash alternative is ofered. Competition is for members only.</p>
-                                        <a href="#" class="btn">shop now</a>
-                                    </div>
-                                    <div class="card-content-box">
-                                        <p>win</p>
-                                        <p>a new look</p>
-                                    </div>
-                                </div>
-                                <div class="mask"><span class="sr-only">mask</span></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="shop-card bg-img">
-                                <img src="../images/img-shop-cards-08.jpg" alt="" />
-                                <div class="price"><span><sup>ref</sup>w4</span></div>
-                                <div class="card-buttons">
-                                    <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-gratipay" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
+                        <div class="col-md-4 tab">
+                            <h3>Paris</h3>
+                            <h5>2133 Rue Saint-Honoré, 75001 Paris</h5>
+                            <p>
+                                Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras
+                                ligula.
+                            </p>
+                            <a href="#" class="btn">view details</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- /shop-cards -->
-            <section class="section-lookbook">
-                <div class="row">
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="lookbook bg-img">
-                            <img src="../images/img-lookbook-01.jpg" alt="" />
-                            <div class="lookbook-inner">
-                                <h3><span>Men's</span><span>lookbook</span></h3>
-                                <p>Lorem ipsum dolor sit amet eras facilisis consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui. Elementum metus facilisis ut phasellu.</p>
-                                <div class="lookbook-btn">
-                                    <a href="#" class="btn">view now</a>
-                                </div>
+                <div class="tabs-content-wrap">
+                    <div class="row tab-content-item">
+                        <div class="col-lg-8"><div id="map" class="map-box gray-first" data-lat="51.509865" data-lng="-0.118092" data-zoom="12"></div></div>
+                        <div class="col-lg-4">
+                            <div class="description">
+                                <h3>Paris</h3>
+                                <h5>2133 Rue Saint-Honoré, 75001 Paris</h5>
+                                <p>
+                                    Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras
+                                    ligula.
+                                </p>
+                                <ul class="contacts">
+                                    <li><address><i class="fa fa-map-marker" aria-hidden="true"></i> 180-182 Regent Street, London, W1B 5BT</address></li>
+                                    <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 0123-456-789</a></li>
+                                    <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i> www.yourwebsite.com </a></li>
+                                    <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> support@yourwebsite.com</a></li>
+                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm</li>
+                                </ul>
+                                <ul class="socials">
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="lookbook bg-img">
-                            <img src="../images/img-lookbook-02.jpg" alt="" />
-                            <div class="lookbook-inner">
-                                <h3><span>women's </span><span>lookbook</span></h3>
-                                <p>Lorem ipsum dolor sit amet eras facilisis consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui. Elementum metus facilisis ut phasellu.</p>
-                                <div class="lookbook-btn">
-                                    <a href="#" class="btn">view now</a>
-                                </div>
+                    <div class="row tab-content-item">
+                        <div class="col-lg-8"><div id="map2" class="map-box gray-second" data-lat="40.730610" data-lng="-73.935242" data-zoom="12"></div></div>
+                        <div class="col-lg-4">
+                            <div class="description">
+                                <h3>Paris</h3>
+                                <h5>2133 Rue Saint-Honoré, 75001 Paris</h5>
+                                <p>
+                                    Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras
+                                    ligula.
+                                </p>
+                                <ul class="contacts">
+                                    <li><address><i class="fa fa-map-marker" aria-hidden="true"></i> 180-182 Regent Street, London, W1B 5BT</address></li>
+                                    <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 0123-456-789</a></li>
+                                    <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i> www.yourwebsite.com </a></li>
+                                    <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> support@yourwebsite.com</a></li>
+                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm</li>
+                                </ul>
+                                <ul class="socials">
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="lookbook bg-img">
-                            <img src="../images/img-lookbook-03.jpg" alt="" />
-                            <div class="lookbook-inner">
-                                <h3><span>your </span><span>lookbook</span></h3>
-                                <p>Lorem ipsum dolor sit amet eras facilisis consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui. Elementum metus facilisis ut phasellu.</p>
-                                <div class="lookbook-btn">
-                                    <a href="#" class="btn">view now</a>
-                                </div>
+                    <div class="row tab-content-item">
+                        <div class="col-lg-8"><div id="map3" class="map-box gray-third" data-lat="48.864716" data-lng="2.349014" data-zoom="12"></div></div>
+                        <div class="col-lg-4">
+                            <div class="description">
+                                <h3>Paris</h3>
+                                <h5>2133 Rue Saint-Honoré, 75001 Paris</h5>
+                                <p>
+                                    Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras
+                                    ligula.
+                                </p>
+                                <ul class="contacts">
+                                    <li><address><i class="fa fa-map-marker" aria-hidden="true"></i> 180-182 Regent Street, London, W1B 5BT</address></li>
+                                    <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 0123-456-789</a></li>
+                                    <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i> www.yourwebsite.com </a></li>
+                                    <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> support@yourwebsite.com</a></li>
+                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm</li>
+                                </ul>
+                                <ul class="socials">
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- / cities -->
         </main>
         <!-- / content -->
         <footer id="footer" class="footer">

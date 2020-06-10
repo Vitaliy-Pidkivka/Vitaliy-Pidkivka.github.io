@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
     <title>Ave</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <script src="../js/jquery-1.12.4.min.js"></script>
-    <script src="../js/slick.min.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key="></script>
-    <script src="../js/jquery.validate.min.js"></script>
-    <script src="../js/select2.full.js"></script>
-    <script src="../js/scripts.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/select2.full.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -221,148 +221,84 @@
         <!-- / header -->
         <main class="content">
             <section class="main-screen not-full lazyload-img-to-bg">
-                <img data-src="../images/bg-main-screen-02.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
+                <img data-src="images/bg-main-screen-02.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
                 <div class="bg-mask"></div>
                 <div class="container-large">
                     <div class="main-screen-inner">
-                        <h1>local <span>stores</span></h1>
-                        <p class="main-screen-subtitle">find a store near you</p>
+                        <h1>the <span>brand</span></h1>
+                        <p class="main-screen-subtitle">company slogan goes here</p>
                     </div>
                 </div>
             </section>
             <!-- / main-screen -->
-            <section class="cities">
+            <section class="clothing">
                 <div class="container">
-                    <div class="row tabs-item">
-                        <div class="col-md-4 tab active">
-                            <h3>london</h3>
-                            <h5>180-182 regent street, london, w1b 5bt</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</p>
-                            <a href="#" class="btn">view details</a>
-                        </div>
-                        <div class="col-md-4 tab">
-                            <h3>new york</h3>
-                            <h5>109 Columbus Circle, New York, NY 10023</h5>
-                            <p>Nunc non posuere nisl. Etiam finibus vel dui nec lobortis. Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae aliquam dui, non sodales nisl.</p>
-                            <a href="#" class="btn">view details</a>
-                        </div>
-                        <div class="col-md-4 tab">
-                            <h3>Paris</h3>
-                            <h5>2133 Rue Saint-Honoré, 75001 Paris</h5>
-                            <p>
-                                Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras
-                                ligula.
-                            </p>
-                            <a href="#" class="btn">view details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="tabs-content-wrap">
-                    <div class="row tab-content-item">
-                        <div class="col-lg-8"><div id="map" class="map-box gray-first" data-lat="51.509865" data-lng="-0.118092" data-zoom="12"></div></div>
-                        <div class="col-lg-4">
-                            <div class="description">
-                                <h3>Paris</h3>
-                                <h5>2133 Rue Saint-Honoré, 75001 Paris</h5>
-                                <p>
-                                    Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras
-                                    ligula.
-                                </p>
-                                <ul class="contacts">
-                                    <li><address><i class="fa fa-map-marker" aria-hidden="true"></i> 180-182 Regent Street, London, W1B 5BT</address></li>
-                                    <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 0123-456-789</a></li>
-                                    <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i> www.yourwebsite.com </a></li>
-                                    <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> support@yourwebsite.com</a></li>
-                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm</li>
-                                </ul>
-                                <ul class="socials">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                                    </li>
-                                </ul>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-md-12">
+                                <div class="clothing-box clothing-item">
+                                    <div class="item-picture lazyload-img-to-bg">
+                                        <img data-src="images/img-clothing-01.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="clothing-box clothing-item">
+                                    <div class="item-picture lazyload-img-to-bg">
+                                        <img data-src="images/img-clothing-02.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
+                                    </div>
+                                    <h3>our values, vision and strategy</h3>
+                                    <h5>The above image would be a great place for an advertising video</h5>
+                                    <p>
+                                        Cras maximus venenatis malesuada. Nulla sagittis elit felis, ac facilisis quam ornare aliquam. Etiam cursus odio vitae dui dignissim, sed tempus lacus tincidunt et donec sapien velit, rhoncus eu nulla a,
+                                        molestie tempus mi maecenas sagittis ornare. Pellentesque sapien mi, <strong>tincidunt nec magna vitae</strong>, volutpat elementum odioni lorem Aliquam tempor massa vitae augue mattis tempor id in ante ut
+                                        augue erat, luctus eil.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row tab-content-item">
-                        <div class="col-lg-8"><div id="map2" class="map-box gray-second" data-lat="40.730610" data-lng="-73.935242" data-zoom="12"></div></div>
-                        <div class="col-lg-4">
-                            <div class="description">
-                                <h3>Paris</h3>
-                                <h5>2133 Rue Saint-Honoré, 75001 Paris</h5>
-                                <p>
-                                    Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras
-                                    ligula.
-                                </p>
-                                <ul class="contacts">
-                                    <li><address><i class="fa fa-map-marker" aria-hidden="true"></i> 180-182 Regent Street, London, W1B 5BT</address></li>
-                                    <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 0123-456-789</a></li>
-                                    <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i> www.yourwebsite.com </a></li>
-                                    <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> support@yourwebsite.com</a></li>
-                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm</li>
-                                </ul>
-                                <ul class="socials">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                                    </li>
-                                </ul>
+                        <div class="col-md-6">
+                            <div class="col-md-12">
+                                <div class="clothing-box clothing-item margin">
+                                    <h3>hand designed clothing</h3>
+                                    <h5>established in 2013, avenue fashion Sed dictum elit vel sapien luctus eras</h5>
+                                    <p>
+                                        Praesent feugiat malesuada tristique maecenas rhoncus diam eget quam vestibulim consectetur, id condimentum leo porttitor. Cum sociis natoque penatibus eta magnis disut parturient montes, nascetur ridiculus
+                                        mus. Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row tab-content-item">
-                        <div class="col-lg-8"><div id="map3" class="map-box gray-third" data-lat="48.864716" data-lng="2.349014" data-zoom="12"></div></div>
-                        <div class="col-lg-4">
-                            <div class="description">
-                                <h3>Paris</h3>
-                                <h5>2133 Rue Saint-Honoré, 75001 Paris</h5>
-                                <p>
-                                    Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras
-                                    ligula.
-                                </p>
-                                <ul class="contacts">
-                                    <li><address><i class="fa fa-map-marker" aria-hidden="true"></i> 180-182 Regent Street, London, W1B 5BT</address></li>
-                                    <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> 0123-456-789</a></li>
-                                    <li><a href="#"><i class="fa fa-link" aria-hidden="true"></i> www.yourwebsite.com </a></li>
-                                    <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> support@yourwebsite.com</a></li>
-                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm</li>
-                                </ul>
-                                <ul class="socials">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                                    </li>
-                                </ul>
+                            <div class="col-md-12">
+                                <div class="clothing-box clothing-item">
+                                    <div class="item-picture lazyload-img-to-bg">
+                                        <img data-src="images/img-clothing-03.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
+                                    </div>
+                                    <h3>Ethical trading</h3>
+                                    <h5>we oversee the working conditions of the people in the supply chain</h5>
+                                    <p>
+                                        Nullam dapibus consectetur neque, faucibus porttitor purus iaculis sed. Aenean eras dapibus augue, eget dignissim dui maecenas et rhoncus mim, vel semper arcu lorem Pellentesque congue justo esteir pellentesque
+                                        aliquet massa eget posuere tincidunt. Cras viverra ullamcorper nunc accumsan hendrerit. <a href="#">A link <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="clothing-box brands">
+                                    <div class="brands-item lazyload-img">
+                                        <img data-src="images/img-clothing-brand-01.png" src="#" alt="image description" loading="lazy" class="lazyload" />
+                                    </div>
+                                    <div class="brands-item lazyload-img">
+                                        <img data-src="images/img-clothing-brand-02.png" src="#" alt="image description" loading="lazy" class="lazyload" />
+                                    </div>
+                                    <div class="brands-item lazyload-img">
+                                        <img data-src="images/img-clothing-brand-03.png" src="#" alt="image description" loading="lazy" class="lazyload" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- / cities -->
+            <!-- / clothing -->
         </main>
         <!-- / content -->
         <footer id="footer" class="footer">

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="format-detection" content="telephone=no">
-        <title>Ave</title>
-        <link rel="stylesheet" href="../css/styles.css">
-        <script src="../js/jquery-1.12.4.min.js"></script>
-        <script src="../js/slick.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key="></script>
-        <script src="../js/jquery.validate.min.js"></script>
-        <script src="../js/select2.full.js"></script>
-        <script src="../js/scripts.js"></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Ave</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/select2.full.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
 
 <body>
     <div class="wrapper white-header">
@@ -221,66 +221,176 @@
         <!-- / header -->
         <main class="content">
             <section class="main-screen not-full lazyload-img-to-bg">
-                <img data-src="../images/bg-main-screen-02.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
+                <img data-src="images/bg-main-screen-02.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
                 <div class="bg-mask"></div>
                 <div class="container-large">
                     <div class="main-screen-inner">
-                        <h1>welcome <span>to ave</span></h1>
-                        <p class="main-screen-subtitle">sign in or register</p>
+                        <h1>Product <span>view</span></h1>
+                        <ul class="breadcrumbs">
+                            <li>mens</li>
+                            <li>casuals</li>
+                            <li>Hoodies & sweatshirts</li>
+                            <li>ave classic sweatshirt</li>
+                        </ul>
                     </div>
                 </div>
             </section>
             <!-- / main-screen -->
-            <section class="forms">
+            <section class="product">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="sign-in-form">
-                                <h3>sign in</h3>
-                                <form action="#" id="sign-in-form">
-                                    <div class="input-group">
-                                        <input type="email" placeholder="Your Email.." name="email" id="sign-in-email" required />
-                                    </div>
-                                    <div class="input-group">
-                                        <input type="password" placeholder="Your password.." name="password" id="sign-in-password" required />
-                                    </div>
-                                    <div class="form-buttons">
-                                        <input type="submit" class="btn" value="sign in" />
-                                        <a href="#">Forgot your password <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                                    </div>
-                                </form>
+                        <div class="col-lg-6">
+                            <div class="product-slider">
+                                <div class="slide"><img src="images/img-product-01.jpg" alt="#" /></div>
+                                <div class="slide"><img src="images/img-product-01.jpg" alt="#" /></div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="register-form">
-                                <h3>register</h3>
-                                <form action="#" id="register-form">
+                        <div class="col-lg-6">
+                            <div class="product-description">
+                                <h5>ave classic sweatshirt</h5>
+                                <ul class="description-row">
+                                    <li>
+                                        <div id="reviewStars-input">
+                                            <input id="star-4" type="radio" name="reviewStars" />
+                                            <label title="gorgeous" for="star-4"></label>
+
+                                            <input id="star-3" type="radio" name="reviewStars" />
+                                            <label title="good" for="star-3"></label>
+
+                                            <input id="star-2" type="radio" name="reviewStars" />
+                                            <label title="regular" for="star-2"></label>
+
+                                            <input id="star-1" type="radio" name="reviewStars" />
+                                            <label title="poor" for="star-1"></label>
+
+                                            <input id="star-0" type="radio" name="reviewStars" />
+                                            <label title="bad" for="star-0"></label>
+                                        </div>
+                                    </li>
+                                    <li>3 review(s)</li>
+                                    <li><a href="#">Add a Review</a></li>
+                                    <li>
+                                        <span>Share: </span>
+                                        <ul class="socials">
+                                            <li>
+                                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="price">
+                                    <span class="with-separator"><sup>£</sup>107</span>
+                                    <span><sup>£</sup>89.99</span>
+                                </div>
+                                <div class="product-details">
+                                    <p>Availability: <span>In stock</span></p>
+                                    <p>Product code: <span>#499577</span></p>
+                                    <p>Tags: <span>Classic, Casual, V-neck, Loose</span></p>
+                                </div>
+                                <p>Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse est congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.</p>
+                                <ul>
+                                    <li>Elasticated cuffs</li>
+                                    <li>Casual fit</li>
+                                    <li>100% Cotton</li>
+                                    <li>Free shipping with 4 days delivery</li>
+                                </ul>
+                                <div class="product-inputs">
                                     <div class="input-group">
-                                        <input type="email" placeholder="Your Email.." name="email" id="register-email"  />
+                                        <h5>Colour</h5>
+                                        <div class="select-wrapper">
+                                            <select name="select" class="select">
+                                                <option value="0">Select Colourr</option>
+                                                <option value="1">Blue</option>
+                                                <option value="2">Red</option>
+                                                <option value="3">Brown</option>
+                                                <option value="4">Black</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="input-group">
-                                        <input type="password" placeholder="Your password.." name="password" id="register-password" />
+                                        <h5>Size</h5>
+                                        <div class="select-wrapper">
+                                            <select name="select2" class="select">
+                                                <option value="0">Select size</option>
+                                                <option value="1">S</option>
+                                                <option value="2">M</option>
+                                                <option value="3">L</option>
+                                                <option value="4">XL</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="input-group">
-                                        <input type="password" placeholder="Confirm password.." name="password-confirm" id="register-password-confirm" />
+                                        <h5>Qty</h5>
+                                        <div class="card-input">
+                                            <span class="minus input-btn"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                            <span class="display">1</span>
+                                            <span class="plus input-btn"><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+                                        </div>
                                     </div>
-                                    <div class="input-group">
-                                        <input type="checkbox" name="subscribe" id="subscribe" />
-                                        <label for="subscribe">Sign up for exclusive updates, discounts, new arrivals, contests, and more!</label>
-                                    </div>
-                                    <div class="form-buttons">
-                                        <input type="submit" class="btn" value="create account" />
-                                        <p>
-                                            By clicking ‘Create Account’, you agree to our <a href="#">Privacy Policy <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                                        </p>
-                                    </div>
-                                </form>
+                                </div>
+                                <div class="product-buttons">
+                                    <a href="#" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                    <a href="#" class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i> Add to lookbook</a>
+                                </div>
+                                <a href="#"><i class="fa fa-compress" aria-hidden="true"></i> add to compare</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-tabs">
+                        <ul class="tabs-item">
+                            <li class="active">Description</li>
+                            <li>Video</li>
+                            <li>Size & Specs</li>
+                            <li>Delivery & Returns</li>
+                            <li>Reviews</li>
+                        </ul>
+                        <div class="tabs-content-wrap">
+                            <div class="tab-content-item">
+                                <h5>Nunc egestas posuere enim, eu maximus erat posuere eget</h5>
+                             <p>Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus. </p>
+                             <p>  Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, enim dui posuere mauris, in aliquet lorem eros eget neque.</p>
+                            </div>
+                            <div class="tab-content-item">
+                                <h5>Nunc egestas posuere enim, eu maximus erat posuere eget</h5>
+                             <p>Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus. </p>
+                             <p>  Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, enim dui posuere mauris, in aliquet lorem eros eget neque.</p>
+                            </div>
+                            <div class="tab-content-item">
+                                <h5>Nunc egestas posuere enim, eu maximus erat posuere eget</h5>
+                             <p>Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus. </p>
+                             <p>  Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, enim dui posuere mauris, in aliquet lorem eros eget neque.</p>
+                            </div>
+                            <div class="tab-content-item">
+                                <h5>Nunc egestas posuere enim, eu maximus erat posuere eget</h5>
+                             <p>Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus. </p>
+                             <p>  Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, enim dui posuere mauris, in aliquet lorem eros eget neque.</p>
+                            </div>
+                            <div class="tab-content-item">
+                                <h5>Nunc egestas posuere enim, eu maximus erat posuere eget</h5>
+                             <p>Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus. </p>
+                             <p>  Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, enim dui posuere mauris, in aliquet lorem eros eget neque.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
+        
         <!-- / content -->
         <footer id="footer" class="footer">
             <div class="container">
