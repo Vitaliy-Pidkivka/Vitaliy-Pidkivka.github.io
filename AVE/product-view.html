@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Ave</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/select2.full.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div class="wrapper white-header">
+        <header id="header" class="header">
+            <div class="header-row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="language">
+                                <a href="#"
+                                    >Currency : GBP <span class="arrow"><span class="sr-only">arrow</span></span></a
+                                >
+                                <ul>
+                                    <li><a href="#">EN</a></li>
+                                    <li><a href="">EN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="header-box">
+                                <div>
+                                    <a href="#">Register</a>
+                                    <a href="#">Sign in</a>
+                                </div>
+                                <a href="#" class="basket">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span>empty</span>
+                                    <span class="arrow"><span class="sr-only">arrow</span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-large">
+                <div class="row">
+                    <div class="col-3">
+                        <a href="#" class="logo">Avenue <span>fashion</span></a>
+                    </div>
+                    <div class="col-9">
+                        <div class="header-large-box">
+                            <ul class="header-menu">
+                                <div class="open-menu">
+                                    <span class="bar1"></span>
+                                    <span class="bar2"></span>
+                                    <span class="bar3"></span>
+                                </div>
+                                <li>
+                                    <a href="#">Mens</a>
+                                    <span class="arrow"><span class="sr-only">arrow</span></span>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <a href="#">casuals</a>
+                                                <ul>
+                                                    <li><a href="#">Jackets</a></li>
+                                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                                    <li><a href="#">Polo Shirts</a></li>
+                                                    <li><a href="#">Sportswear</a></li>
+                                                    <li><a href="#">Trousers & Chinos</a></li>
+                                                    <li><a href="#">T-Shirts</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <a href="#">formal</a>
+                                                <ul>
+                                                    <li><a href="#">Jackets</a></li>
+                                                    <li><a href="#">Shirts</a></li>
+                                                    <li><a href="#">Suits</a></li>
+                                                    <li><a href="#">Trousers</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="banner">
+                                                <span>Autumn sale!</span>
+                                                <span>up to 50% off</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Womens</a>
+                                    <span class="arrow"><span class="sr-only">arrow</span></span>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <a href="#">casuals</a>
+                                                <ul>
+                                                    <li><a href="#">Jackets</a></li>
+                                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                                    <li><a href="#">Polo Shirts</a></li>
+                                                    <li><a href="#">Sportswear</a></li>
+                                                    <li><a href="#">Trousers & Chinos</a></li>
+                                                    <li><a href="#">T-Shirts</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <a href="#">formal</a>
+                                                <ul>
+                                                    <li><a href="#">Jackets</a></li>
+                                                    <li><a href="#">Shirts</a></li>
+                                                    <li><a href="#">Suits</a></li>
+                                                    <li><a href="#">Trousers</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="banner">
+                                                <span>Autumn sale!</span>
+                                                <span>up to 50% off</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">The brand</a>
+                                </li>
+                                <li>
+                                    <a href="#">Local stores</a>
+                                    <span class="arrow"><span class="sr-only">arrow</span></span>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <a href="#">casuals</a>
+                                                <ul>
+                                                    <li><a href="#">Jackets</a></li>
+                                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                                    <li><a href="#">Polo Shirts</a></li>
+                                                    <li><a href="#">Sportswear</a></li>
+                                                    <li><a href="#">Trousers & Chinos</a></li>
+                                                    <li><a href="#">T-Shirts</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <a href="#">formal</a>
+                                                <ul>
+                                                    <li><a href="#">Jackets</a></li>
+                                                    <li><a href="#">Shirts</a></li>
+                                                    <li><a href="#">Suits</a></li>
+                                                    <li><a href="#">Trousers</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="banner">
+                                                <span>Autumn sale!</span>
+                                                <span>up to 50% off</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Look Book</a>
+                                    <span class="arrow"><span class="sr-only">arrow</span></span>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <a href="#">casuals</a>
+                                                <ul>
+                                                    <li><a href="#">Jackets</a></li>
+                                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                                    <li><a href="#">Polo Shirts</a></li>
+                                                    <li><a href="#">Sportswear</a></li>
+                                                    <li><a href="#">Trousers & Chinos</a></li>
+                                                    <li><a href="#">T-Shirts</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <a href="#">formal</a>
+                                                <ul>
+                                                    <li><a href="#">Jackets</a></li>
+                                                    <li><a href="#">Shirts</a></li>
+                                                    <li><a href="#">Suits</a></li>
+                                                    <li><a href="#">Trousers</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="banner">
+                                                <span>Autumn sale!</span>
+                                                <span>up to 50% off</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="search">
+                                <input type="text" placeholder="Search.." />
+                                <a href="#"> <i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="black-mask"></div>
+                            <div class="open-menu">
+                                <span class="bar1"></span>
+                                <span class="bar2"></span>
+                                <span class="bar3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- / header -->
+        <main class="content">
+            <section class="main-screen not-full lazyload-img-to-bg">
+                <img data-src="images/bg-main-screen-02.jpg" src="#" alt="image description" loading="lazy" class="lazyload lazyload-bg" />
+                <div class="bg-mask"></div>
+                <div class="container-large">
+                    <div class="main-screen-inner">
+                        <h1>Product <span>view</span></h1>
+                        <ul class="breadcrumbs">
+                            <li>mens</li>
+                            <li>casuals</li>
+                            <li>Hoodies & sweatshirts</li>
+                            <li>ave classic sweatshirt</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- / main-screen -->
+            <section class="product">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="product-slider">
+                                <div class="slide"><img src="images/img-product-01.jpg" alt="#" /></div>
+                                <div class="slide"><img src="images/img-product-01.jpg" alt="#" /></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="product-description">
+                                <h5>ave classic sweatshirt</h5>
+                                <ul class="description-row">
+                                    <li>
+                                        <div id="reviewStars-input">
+                                            <input id="star-4" type="radio" name="reviewStars" />
+                                            <label title="gorgeous" for="star-4"></label>
+
+                                            <input id="star-3" type="radio" name="reviewStars" />
+                                            <label title="good" for="star-3"></label>
+
+                                            <input id="star-2" type="radio" name="reviewStars" />
+                                            <label title="regular" for="star-2"></label>
+
+                                            <input id="star-1" type="radio" name="reviewStars" />
+                                            <label title="poor" for="star-1"></label>
+
+                                            <input id="star-0" type="radio" name="reviewStars" />
+                                            <label title="bad" for="star-0"></label>
+                                        </div>
+                                    </li>
+                                    <li>3 review(s)</li>
+                                    <li><a href="#">Add a Review</a></li>
+                                    <li>
+                                        <span>Share: </span>
+                                        <ul class="socials">
+                                            <li>
+                                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="price">
+                                    <span class="with-separator"><sup>£</sup>107</span>
+                                    <span><sup>£</sup>89.99</span>
+                                </div>
+                                <div class="product-details">
+                                    <p>Availability: <span>In stock</span></p>
+                                    <p>Product code: <span>#499577</span></p>
+                                    <p>Tags: <span>Classic, Casual, V-neck, Loose</span></p>
+                                </div>
+                                <p>Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse est congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.</p>
+                                <ul>
+                                    <li>Elasticated cuffs</li>
+                                    <li>Casual fit</li>
+                                    <li>100% Cotton</li>
+                                    <li>Free shipping with 4 days delivery</li>
+                                </ul>
+                                <div class="product-inputs">
+                                    <div class="input-group">
+                                        <h5>Colour</h5>
+                                        <div class="select-wrapper">
+                                            <select name="select" class="select">
+                                                <option value="0">Select Colourr</option>
+                                                <option value="1">Blue</option>
+                                                <option value="2">Red</option>
+                                                <option value="3">Brown</option>
+                                                <option value="4">Black</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <h5>Size</h5>
+                                        <div class="select-wrapper">
+                                            <select name="select2" class="select">
+                                                <option value="0">Select size</option>
+                                                <option value="1">S</option>
+                                                <option value="2">M</option>
+                                                <option value="3">L</option>
+                                                <option value="4">XL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <h5>Qty</h5>
+                                        <div class="card-input">
+                                            <span class="minus input-btn"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                            <span class="display">1</span>
+                                            <span class="plus input-btn"><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-buttons">
+                                    <a href="#" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                    <a href="#" class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i> Add to lookbook</a>
+                                </div>
+                                <a href="#"><i class="fa fa-compress" aria-hidden="true"></i> add to compare</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-tabs">
+                        <ul class="tabs-item">
+                            <li class="active">Description</li>
+                            <li>Video</li>
+                            <li>Size & Specs</li>
+                            <li>Delivery & Returns</li>
+                            <li>Reviews</li>
+                        </ul>
+                        <div class="tabs-content-wrap">
+                            <div class="tab-content-item">
+                                <h5>Nunc egestas posuere enim, eu maximus erat posuere eget</h5>
+                             <p>Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus. </p>
+                             <p>  Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, enim dui posuere mauris, in aliquet lorem eros eget neque.</p>
+                            </div>
+                            <div class="tab-content-item">
+                                <h5>Nunc egestas posuere enim, eu maximus erat posuere eget</h5>
+                             <p>Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus. </p>
+                             <p>  Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, enim dui posuere mauris, in aliquet lorem eros eget neque.</p>
+                            </div>
+                            <div class="tab-content-item">
+                                <h5>Nunc egestas posuere enim, eu maximus erat posuere eget</h5>
+                             <p>Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus. </p>
+                             <p>  Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, enim dui posuere mauris, in aliquet lorem eros eget neque.</p>
+                            </div>
+                            <div class="tab-content-item">
+                                <h5>Nunc egestas posuere enim, eu maximus erat posuere eget</h5>
+                             <p>Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus. </p>
+                             <p>  Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, enim dui posuere mauris, in aliquet lorem eros eget neque.</p>
+                            </div>
+                            <div class="tab-content-item">
+                                <h5>Nunc egestas posuere enim, eu maximus erat posuere eget</h5>
+                             <p>Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus. </p>
+                             <p>  Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis urna et hendrerit sodales. Nunc molestie risus nec fringilla lacinia. Nulla facilisi. Etiam neque velit, tristique eget sollicitudin eget, placerat at metus. Proin dictum lobortis velit, id suscipit orci faucibus ut. Aliquam erat volutpat. Vivamus feugiat justo in diam placerat, id dignissim elit auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi suscipit nulla urna. Suspendisse potenti. Nullam varius quam sed nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus imperdiet ultricies. Nullam pretium cursus augue auctor vulputate. Quisque a convallis diam commodo eget diam id, eleifend dictum libero. Etiam varius, nisi vel dignissim sodales, enim dui posuere mauris, in aliquet lorem eros eget neque.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- / content -->
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="footer-row">
+                    <div class="footer-box">
+                        <h5>Information</h5>
+                        <ul>
+                            <li><a href="#">The brand</a></li>
+                            <li><a href="#">Local stores</a></li>
+                            <li><a href="#">Customer service</a></li>
+                            <li><a href="#">Privacy & cookies</a></li>
+                            <li><a href="#">Site map</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-box">
+                        <h5>whit buy from us</h5>
+                        <ul>
+                            <li><a href="#">Shipping & returns</a></li>
+                            <li><a href="#">Secure shopping</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Award winning</a></li>
+                            <li><a href="#">Ethical trading</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-box">
+                        <h5>your account</h5>
+                        <ul>
+                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">View cart</a></li>
+                            <li><a href="#">View your lookbook</a></li>
+                            <li><a href="#">Track an order</a></li>
+                            <li><a href="#">Update information</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-box">
+                        <h5>lookbook</h5>
+                        <ul>
+                            <li><a href="#">Latest posts</a></li>
+                            <li><a href="#">Men’s lookbook</a></li>
+                            <li><a href="#">Women’s lookbook</a></li>
+                            <li><a href="#">Lookbooks RSS feed</a></li>
+                            <li><a href="#">View your lookbook</a></li>
+                            <li><a href="#">Delete your lookbook</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-box">
+                        <h5>contact details</h5>
+                        <div class="contacts">
+                            <address>
+                                <p>Head Office: Avenue Fashion,</p>
+                                <p>180-182 Regent Street, London.</p>
+                            </address>
+                            <p class="phone">Telephone: <a href="tel:123456789">0123-456-789</a></p>
+                            <p class="phone">Email: <a href="mailto:aa@gmail.com">support@yourwebsite.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="banner">
+                            <span>award winner</span>
+                            <span>fashion awards 2016</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="socials">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">&copy; 2016 Avenue Fashion™</div>
+                        <div class="col-md-8">
+                            <p><span>Design byt RobbyDesigns.com</span><span>Dev by Loremipsum.com</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- / footer -->
+        <!--/ footer -->
+    </div>
+    <!-- / wrapper -->
+</body>
