@@ -1,0 +1,44 @@
+@mixin position-side() {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+@mixin vCenter {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin hCenter {
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%)
+}
+
+
+@mixin hideSelectArrow{
+	&::-ms-expand {
+		display: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+}
+
+@mixin adaptiv-font($pcSize, $mobSize, $maxWidth, $minWidth) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - $minWidth;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - #{$minWidth + px}) / #{$maxWidth})) ;
+}
+
+@mixin adaptiv-line-height($pcSize, $mobSize, $maxWidth, $minWidth) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - $minWidth;
+	line-height: calc(#{$mobSize + px} + #{$addSize} * ((100vw - #{$minWidth + px}) / #{$maxWidth})) ;
+}

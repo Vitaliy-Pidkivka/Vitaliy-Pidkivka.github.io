@@ -1,0 +1,75 @@
+.clients {
+	h2 {
+		margin-bottom: 36px;
+	}
+	.swiper-wrapper {
+		align-items: center;
+	}
+	.swiper-slide{
+		padding: 0 10px;
+		text-align: center;
+		img{
+			max-width: 100%;
+		}
+	}
+	.swiper-nav{
+		margin-bottom: 94px;
+	}
+}
+.swiper-nav {
+	display: flex;
+	align-items: center;
+}
+.swiper-pagination {
+	display: flex;
+	margin-right: 45px;
+	.swiper-pagination-bullet {
+		transition: all .2s ease;
+		cursor: pointer;
+		display: block;
+		border-radius: 50%;
+		background-color: $gray-200;
+		width: 10px;
+		height: 10px;
+		&:not(:last-child) {
+			margin-right: 24px;
+		}
+		&.swiper-pagination-bullet-active {
+			width: 30px;
+			background-color: $red;
+			border-radius: 5px;
+		}
+	}
+}
+.swiper-button-prev,
+.swiper-button-next {
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	padding: 13px 9px;
+	border-radius: 10px;
+	border: 2px solid $red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	&::before {
+		content: "";
+		display: block;
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 20px;
+		height: 13px;
+	}
+}
+.swiper-button-prev {
+	margin-right: 15px;
+	&::before {
+		background-image: url(#{$images}left-arrow.svg);
+	}
+}
+.swiper-button-next {
+	&::before {
+		background-image: url(#{$images}right-arrow.svg);
+	}
+}

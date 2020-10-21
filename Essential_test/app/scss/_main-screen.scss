@@ -1,0 +1,73 @@
+.main-screen {
+	min-height: 950px;
+	padding: 170px 0 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	@include media("<desktop") {
+		min-height: auto;
+	}
+	.container {
+		display: flex;
+		align-items: center;
+		@include media("<desktop") {
+			flex-direction: column;
+		}
+	}
+	figure {
+		margin: 0;
+		margin-right: 46px;
+		img {
+			@include media("<mddesktop") {
+				width: 400px;
+				max-width: 100%;
+			}
+		}
+	}
+
+	.main-screen-info {
+		font-size: 36px;
+		line-height: 48px;
+		@include media("<large") {
+			font-size: 26px;
+			line-height: 38px;
+		}
+		h1 {
+			padding-bottom: 23px;
+			margin-top: 38px;
+			padding-right: 60px;
+			margin-bottom: 30px;
+			position: relative;
+			@include media("<large") {
+				margin-top: 26px;
+			}
+			@include media("<mddesktop") {
+				padding: 0;
+				margin-bottom: 10px;
+			}
+
+			&::after {
+				content: "";
+				display: block;
+				bottom: 0;
+				right: 0;
+				display: block;
+				position: absolute;
+				height: 3px;
+				width: 160%;
+				background-color: $red;
+				@include media("<mddesktop") {
+					display: none;
+				}
+			}
+		}
+		> p {
+			margin: 0;
+			margin-left: 50px;
+			@include media("<large") {
+				margin-left: 0;
+			}
+		}
+	}
+}

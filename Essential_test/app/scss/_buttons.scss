@@ -1,0 +1,51 @@
+/* buttons */
+
+.btn {
+	white-space: normal;
+	display: inline-block;
+	text-decoration: none;
+	color: $white;
+	flex-shrink: 0;
+	&-default {
+		background-color: $red;
+		padding: 15px 30px;
+		font-size: 18px;
+		line-height: 24px;
+		@include media("<desktop") {
+			padding: 9px 17px;
+		}
+		@include media("<tablet") {
+			font-size: 14px;
+			line-height: 20px;
+		}
+		&:hover {
+			background-color: $red-200;
+		}
+	}
+	&-large {
+		padding: 12px 33px;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 36px;
+		@include media("<desktop") {
+			padding: 8px 19px;
+		}
+	}
+	&-with-line {
+		color: $red;
+		padding-left: 45px;
+		position: relative;
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			transform: translate(0, -50%);
+			top: 50%;
+			left: 0;
+			width: 37px;
+			height: 2px;
+			background-color: $red;
+			display: block;
+		}
+	}
+}

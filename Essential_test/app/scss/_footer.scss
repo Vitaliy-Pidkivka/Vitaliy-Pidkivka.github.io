@@ -1,0 +1,53 @@
+#footer {
+	padding: 56px 0 32px;
+	background-color: $gray-600;
+	.logo{
+		margin-bottom: 37px;
+	}
+	.footer-row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		&:first-child {
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+		&:last-child {
+			font-size: 14px;
+			line-height: 21px;
+		}
+		p {
+			margin: 0;
+		}
+	}
+	.footer-box {
+		max-width: 405px;
+		padding: 0 15px;
+		margin-bottom: 15px;
+	}
+	.logo {
+	}
+	.lazyload-img {
+	}
+	.lazyload {
+	}
+	.address {
+	}
+	.contact-phones {
+	}
+	.schedule {
+	}
+	.social-media {
+	}
+	.socials {
+	}
+
+	.copy {
+		text-transform: uppercase;
+	}
+	.design {
+		span {
+			color: $red;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+h1,
+h2 {
+	font-weight: 400;
+	display: inline-block;
+}
+h1 {
+	font-size: 110px;
+	line-height: 110px;
+	@include media("<tablet") {
+		font-size: 60px;
+		line-height: 60px;
+	}
+}
+h2 {
+	font-size: 88px;
+	line-height: 88px;
+	@include media("<tablet") {
+		font-size: 45px;
+		line-height: 45px;
+	}
+}
+h5 {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	color: $gray-300;
+}
+.section-title {
+	position: relative;
+	padding-bottom: 24px;
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		display: block;
+		width: 300%;
+		height: 4px;
+		background-color: $red;
+	}
+}

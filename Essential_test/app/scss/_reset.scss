@@ -1,0 +1,193 @@
+html {
+	&.menu-opened {
+		touch-action: none;
+		overscroll-behavior: none;
+		-webkit-overflow-scrolling: auto;
+		overflow: hidden;
+	}
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	min-width: 320px;
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	line-height: $line-height-main;
+	color: $text-color;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	@include media("<desktop") {
+		font-size: 16px;
+		line-height: 1.5em;
+	}
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: none;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+	border: none;
+	padding: 0;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+q:before,
+q:after {
+	content: "";
+}
+
+a {
+	transition: all 0.3s;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+	&:focus {
+		outline: none;
+	}
+}
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: $gray-500;
+	.content {
+		flex-grow: 1;
+	}
+}
+
+.container,
+.container-fluid {
+	@include media("<tablet") {
+		padding-left: $grid-gutter-width-mobile / 2;
+		padding-right: $grid-gutter-width-mobile / 2;
+	}
+}
+
+.container {
+	max-width: $container-width;
+	width: 100%;
+	margin: 0 auto;
+	padding-right: $grid-gutter-width / 2;
+	padding-left: $grid-gutter-width / 2;
+}
+section {
+	&:not(.main-screen) {
+		padding: 88px 0;
+		@include media("<desktop") {
+			padding: 40px 0;
+		}
+		@include media("<tablet") {
+			padding: 30px 0;
+		}
+	}
+}
+.bg-img {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1,
+.h1 {
+	margin: 0;
+}
+
+h2,
+.h2 {
+	margin: 0;
+}
+
+h3,
+.h3 {
+	margin: 0;
+}
+
+h4,
+.h4 {
+	margin: 0;
+}
+
+h5,
+.h5 {
+	margin: 0;
+}
+
+h6,
+.h6 {
+	margin: 0;
+}
+
+.row {
+	&-flex {
+		@include media(">=tablet") {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+}
+
+.div[class|="col-"] {
+	position: relative;
+}
+
+img.lazyload {
+	opacity: 0;
+	transition: opacity 0.3s;
+
+	&.lazyloaded {
+		opacity: 1;
+	}
+}
+
+.lazyload-img-to-bg {
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+.black-mask {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: $black;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 2;
+	position: fixed;
+	transition: all 0.5s ease-in-out;
+	&.menu-opened {
+		opacity: 0.6;
+		visibility: visible;
+	}
+}

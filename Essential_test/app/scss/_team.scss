@@ -1,0 +1,76 @@
+.team {
+	h2 {
+		margin-bottom: 48px;
+		margin-right: 36px;
+		@include media("<tablet") {
+			margin-bottom: 15px;
+		}
+		& + .btn {
+			margin-bottom: 15px;
+		}
+	}
+	.team-row {
+		margin-left: -15px;
+		margin-right: -15px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.person {
+		flex: 0 0 33.333%;
+		max-width: 33.333%;
+		padding: 0 15px;
+		margin-bottom: 10px;
+		text-align: center;
+		@include media("<mddesktop") {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+		@include media("<tablet") {
+			flex: 0 0 100%;
+			max-width: 50%;
+		}
+		&-inner {
+			position: relative;
+		}
+		img {
+			max-width: 100%;
+		}
+		figcaption {
+			font-weight: 600;
+			padding: 16px 20px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+			span {
+				display: block;
+				&.initials {
+					font-weight: 600;
+					font-size: 36px;
+					line-height: 36px;
+					@include media("<desktop") {
+						font-size: 26px;
+						line-height: 26px;
+					}
+					&:not(:last-child) {
+						margin-bottom: 8px;
+					}
+				}
+				&.position {
+					color: $red;
+					font-size: 20px;
+					line-height: 24px;
+					&:not(:last-child) {
+						margin-bottom: 8px;
+					}
+				}
+				&.department {
+					font-size: 16px;
+					line-height: 24px;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}

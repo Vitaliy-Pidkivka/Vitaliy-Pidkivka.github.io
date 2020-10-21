@@ -1,0 +1,180 @@
+#header {
+	padding: 15px 0 10px;
+	background-color: $gray-500;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.logo {
+		display: block;
+		margin-right: 10px;
+		img {
+			@include media("<mddesktop") {
+				max-width: 220px;
+			}
+			@include media("<tablet") {
+				max-width: 120px;
+			}
+		}
+	}
+	.header-menu,
+	.header-lang {
+		list-style: none;
+		padding-left: 0;
+		margin: 0;
+		display: flex;
+		align-items: center;
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.header-menu {
+		flex-wrap: wrap;
+		margin-right: 33px;
+
+		@include media("<large") {
+			margin-right: 15px;
+		}
+		a {
+			margin: 0 28px;
+			@include media("<large") {
+				margin: 0 10px;
+			}
+			color: white;
+			&:hover {
+				color: $red;
+			}
+		}
+		@include media("<desktop") {
+			background-color: $gray-500;
+			position: absolute;
+			top: 76px;
+			left: 0;
+			padding: 40px 0;
+			width: 100%;
+			height: calc(100vh - 76px);
+			flex-direction: column;
+			flex-wrap: nowrap;
+			overflow: auto;
+			transform: translateX(-100%);
+			transition: all 0.5s ease;
+			z-index: 20;
+			&.menu-opened {
+				transform: translateX(0);
+			}
+			a {
+				display: block;
+				font-size: 30px;
+				line-height: 1.2;
+				margin: 30px 10px;
+			}
+		}
+		@include media("<tablet") {
+			top: 65px;
+			height: calc(100vh - 65px);
+		}
+	}
+
+	.header-lang {
+		margin-right: 48px;
+		order: 1;
+		@include media("<large") {
+			margin-right: 15px;
+		}
+		@include media("<tablet") {
+			margin-right: 8px;
+		}
+		@include media("<440px") {
+			display: none;
+		}
+		li {
+			&.active {
+				a {
+					color: $red;
+					font-weight: bold;
+				}
+			}
+		}
+		a {
+			margin: 0 9px;
+			text-transform: uppercase;
+			color: $gray-400;
+			@include media("<large") {
+				margin: 0 5px;
+			}
+		}
+	}
+
+	.header-nav {
+		display: flex;
+		align-items: center;
+	}
+	.contact-btn {
+		order: 3;
+		margin-right: -128px;
+		@include media("<1850px") {
+			margin-right: 0;
+		}
+	}
+
+	.open-menu {
+		display: block;
+		z-index: 20;
+		text-decoration: none;
+		width: 40px;
+		height: 40px;
+		position: relative;
+		border: 5px solid transparent;
+		margin-right: 15px;
+		color: $white;
+		order: 2;
+		@include media("<tablet") {
+			margin-right: 6px;
+		}
+		@include media(">=desktop") {
+			display: none;
+		}
+		span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: 0;
+			border-bottom: 2px solid;
+			transform: translate(-50%, -50%);
+			transition: all 0.3s;
+			&:nth-child(1) {
+				margin-top: -7px;
+			}
+			&:nth-child(2) {
+				margin-top: 0;
+			}
+			&:nth-child(3) {
+				margin-top: 7px;
+			}
+		}
+		&.menu-opened {
+			span {
+				&:nth-child(1) {
+					transform: translate(-50%, -50%) rotate(45deg);
+					margin-top: 0;
+				}
+				&:nth-child(2) {
+					opacity: 0;
+				}
+				&:nth-child(3) {
+					transform: translate(-50%, -50%) rotate(-45deg);
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
