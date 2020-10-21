@@ -1,17 +1,499 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Poject Index</title>
+	<meta name="format-detection" content="telephone=no">
+	<title>Essential test</title>
 	<link rel="stylesheet" href="css/styles.css">
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3RIvpmO6drWbrblA8DViaAYzkuxZbS_o&&libraries=&v=weekly"
+      defer
+    ></script>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/scripts.js"></script>
 </head>
+
 <body>
-	<ul class="list-unstyled">
-		<!-- inject:html -->
-		<li><a href="homepage.html" target="_blank">homepage.html</a></li>
-		<!-- endinject -->
-	</ul>
+    <div class="wrapper">
+        <header id="header">
+        	<div class="container">
+        		<div class="header-box">
+        			<a href="#" class="logo">
+        				<div class="lazyload-img">
+        					<img data-src="images/logo.svg" src="#" alt="image description" loading="lazy" class="lazyload" />
+        				</div>
+        			</a>	
+        		</div>
+        		<div class="header-box">
+        			<nav class="header-nav">
+        				<ul class="header-menu">
+        					<li><a href="#about">Про нас</a></li>
+        					<li><a href="#services">Послуги</a></li>
+        					<li><a href="#team">Команда</a></li>
+        					<li><a href="#news">Новини</a></li>
+        					<li><a href="#contacts">Контакти</a></li>
+        				</ul>
+        				<ul class="header-lang">
+        					<li class="active"><a href="#">ua</a></li>
+        					<li><a href="#">ru</a></li>
+        					<li><a href="#">en</a></li>
+        				</ul>
+        				<a href="#" class="btn btn-default contact-btn">Напишіть нам</a>
+        				<a href="#" class="open-menu">
+        					<span></span>
+        					<span></span>
+        					<span></span>
+        					<span class="sr-only">Open menu</span> </a
+        				><!-- /.open-menu -->
+        			</nav>
+        			
+        		</div>
+        	</div>
+        </header>
+        <!-- / .header -->
+        <main>
+            <section class="main-screen">
+                <div class="container">
+                    <figure>
+                        <div class="lazyload-img">
+                            <img data-src="images/logo-large.svg" src="#" alt="image description" loading="lazy" class="lazyload" />
+                        </div>
+                    </figure>
+                    <div class="main-screen-info">
+                        <h1>Ессеншал</h1>
+                        <p>Законні рішення для репутації клієнтів</p>
+                    </div>
+                </div>
+            </section>
+            <!-- / .main-screen -->
+            <section class="about" id="about">
+                <div class="container">
+                    <figure>
+                        <div class="lazyload-img">
+                            <img data-src="images/img-about-001.jpg" src="#" alt="image description" loading="lazy" class="lazyload" />
+                        </div>
+                    </figure>
+                    <div class="about-info">
+                        <div class="about-info-inner">
+                            <h2 class="section-title">Про нас</h2>
+                            <div class="text">
+                                <p><strong>ESSENTIAL</strong> — українська юридична фірма, що надає послуги в різних сферах бізнес-права компаніям та приватним особам. Ми обслуговуємо іноземний бізнес в Україні, а також український бізнес за кордоном.</p>
+                                <p><strong>ESSENTIALS</strong> широко співпрацює з юридичними фірмами в інших юрисдикціях, що дозволяє нам надавати широкопрофільний спектр послуг в українському сегмент.</p>
+                                <p>Зважена цінова політика та клієнтоорієнтованість робить нас унікальним постачальником юридичних послуг.</p>
+                            </div>
+                            <a href="#" class="btn btn-default btn-large">Напишіть нам</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- / .about -->
+            <section class="services" id="services">
+                <div class="container">
+                    <h2 class="section-title">Послуги</h2>
+                    <div class="services-row">
+                        <a href="#" class="services-item">
+                            <div class="services-item-inner">
+                                <p>Створення та запуск бізнесу</p>
+                            </div>
+                        </a>
+                        <a href="#" class="services-item">
+                            <div class="services-item-inner">
+                                <p>Супровід господарської діяльності та адміністрування</p>
+                            </div>
+                        </a>
+                        <a href="#" class="services-item">
+                            <div class="services-item-inner">
+                                <p>Податкові спори</p>
+                            </div>
+                        </a>
+                        <a href="#" class="services-item">
+                            <div class="services-item-inner">
+                                <p>Бухгалтерській облік</p>
+                            </div>
+                        </a>
+                        <a href="#" class="services-item">
+                            <div class="services-item-inner">
+                                <p>Податковий консалтинг</p>
+                            </div>
+                        </a>
+                        <a href="#" class="services-item">
+                            <div class="services-item-inner">
+                                <p>Конкуренція</p>
+                            </div>
+                        </a>
+                        <a href="#" class="services-item">
+                            <div class="services-item-inner">
+                                <p>Операції з не рухомістю та землею</p>
+                            </div>
+                        </a>
+                        <a href="#" class="services-item">
+                            <div class="services-item-inner">
+                                <p>Комплаєнс</p>
+                            </div>
+                        </a>
+                        <a href="#" class="services-item">
+                            <div class="services-item-inner">
+                                <p>Структурування бізнесу</p>
+                            </div>
+                        </a>
+                        <a href="#" class="services-item">
+                            <div class="services-item-inner">
+                                <p>M & A</p>
+                            </div>
+                        </a>
+                        <a href="#" class="services-item">
+                            <div class="services-item-inner">
+                                <p>GR</p>
+                            </div>
+                        </a>
+                        <a href="#" class="services-item">
+                            <div class="services-item-inner">
+                                <p>Праця та зайнятість</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- / .services -->
+            <section class="team" id="team">
+                <div class="container">
+                    <h2 class="section-title">Команда</h2>
+                    <a href="#" class="btn btn-with-line">Уся команда</a>
+                    <div class="team-row">
+                        <div class="person">
+                            <div class="person-inner">
+                                <figure>
+                                    <div class="lazyload-img">
+                                        <img data-src="images/img-person-001.svg" src="#" alt="image description" loading="lazy" class="lazyload" />
+                                    </div>
+                                    <figcaption>
+                                        <span class="initials">Олександр Колючий</span>
+                                        <span class="position">Головний партнер ESSENTIALS</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="person-inner">
+                                <figure>
+                                    <div class="lazyload-img">
+                                        <img data-src="images/img-person-002.svg" src="#" alt="image description" loading="lazy" class="lazyload" />
+                                    </div>
+                                    <figcaption>
+                                        <span class="initials">Марія Кондратюк</span>
+                                        <span class="position">Керуючий партнер, адвокат, юрист</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="person-inner">
+                                <figure>
+                                    <div class="lazyload-img">
+                                        <img data-src="images/img-person-003.svg" src="#" alt="image description" loading="lazy" class="lazyload" />
+                                    </div>
+                                    <figcaption>
+                                        <span class="initials">Олександр Ісаєв</span>
+                                        <span class="position">Партнер, головний юрист</span>
+                                        <span class="department">Фінанси, вирішення спорів, банківська справа</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- / .team -->
+            <section class="news" id="news">
+                <div class="container">
+                    <h2 class="section-title">Останні записи</h2>
+                    <a href="#" class="btn btn-with-line">Усі статті</a>
+                    <div class="news-row">
+                        <div class="article-wrapper">
+                            <a href="#" class="article">
+                                <figure>
+                                    <div class="lazyload-img">
+                                        <img data-src="images/img-article-001.jpg" src="#" alt="image description" loading="lazy" class="lazyload" />
+                                    </div>
+                                </figure>
+                                <div class="article-description">
+                                    <h4>Законодавство про промислові зразки, ТМ, винаходи та корисні моделі: що змінилось</h4>
+                                    <div class="article-description-row">
+                                        <span class="btn btn-with-line">Детальніше</span>
+                                        <div class="date">
+                                            <span>10.08.2020</span>
+                                            <time datetime="2013-04-06T13:53">14:55</time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article-wrapper">
+                            <a href="#" class="article">
+                                <figure>
+                                    <div class="lazyload-img">
+                                        <img data-src="images/img-article-002.jpg" src="#" alt="image description" loading="lazy" class="lazyload" />
+                                    </div>
+                                </figure>
+                                <div class="article-description">
+                                    <h4>Штрафи за порушення терміну реєстрації податкових накладних зменшені</h4>
+                                    <div class="article-description-row">
+                                        <span class="btn btn-with-line">Детальніше</span>
+                                        <div class="date">
+                                            <span>10.08.2020</span>
+                                            <time datetime="2013-04-06T13:53">14:55</time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- / .news -->
+            <section class="clients">
+                <div class="container">
+                    <h2 class="section-title">Наші клієнти</h2>
+                    <div class="swiper-container">
+                        <div class="swiper-nav">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="images/img-clients-001.svg" alt="" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="images/img-clients-002.svg" alt="" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="images/img-clients-003.svg" alt="" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="images/img-clients-004.svg" alt="" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="images/img-clients-004.svg" alt="" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="images/img-clients-004.svg" alt="" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="images/img-clients-004.svg" alt="" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="images/img-clients-004.svg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <!--/ Slides -->
+                    </div>
+                </div>
+            </section>
+            <!-- / .clients -->
+            <section class="testimonials">
+                <div class="container">
+                    <h2 class="section-title">Відгуки</h2>
+                    <div class="swiper-container">
+                        <div class="swiper-nav">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <blockquote>
+                                    <p>Essentials — це професійна команда, яка допомогла нам у вирішенні складного питання, яке стосувалось фінансів. Компанії в які ми звертались не змогли забезпечити нам потрібного результату, але не Essentials. Рекомендуємо до співпраці</p>
+                                    <cite>
+                                        <span class="initials">Олександр Шажко</span>
+                                        <span class="position">Директор ПП “Електротранс”</span>
+                                    </cite>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <blockquote>
+                                    <p>Essentials — це професійна команда, яка допомогла нам у вирішенні складного питання, яке стосувалось фінансів. Компанії в які ми звертались не змогли забезпечити нам потрібного результату, але не Essentials. Рекомендуємо до співпраці</p>
+                                    <cite>
+                                        <span class="initials">Олександр Шажко</span>
+                                        <span class="position">Директор ПП “Електротранс”</span>
+                                    </cite>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <blockquote>
+                                    <p>Essentials — це професійна команда, яка допомогла нам у вирішенні складного питання, яке стосувалось фінансів. Компанії в які ми звертались не змогли забезпечити нам потрібного результату, але не Essentials. Рекомендуємо до співпраці</p>
+                                    <cite>
+                                        <span class="initials">Олександр Шажко</span>
+                                        <span class="position">Директор ПП “Електротранс”</span>
+                                    </cite>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <blockquote>
+                                    <p>Essentials — це професійна команда, яка допомогла нам у вирішенні складного питання, яке стосувалось фінансів. Компанії в які ми звертались не змогли забезпечити нам потрібного результату, але не Essentials. Рекомендуємо до співпраці</p>
+                                    <cite>
+                                        <span class="initials">Олександр Шажко</span>
+                                        <span class="position">Директор ПП “Електротранс”</span>
+                                    </cite>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <blockquote>
+                                    <p>Essentials — це професійна команда, яка допомогла нам у вирішенні складного питання, яке стосувалось фінансів. Компанії в які ми звертались не змогли забезпечити нам потрібного результату, але не Essentials. Рекомендуємо до співпраці</p>
+                                    <cite>
+                                        <span class="initials">Олександр Шажко</span>
+                                        <span class="position">Директор ПП “Електротранс”</span>
+                                    </cite>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <blockquote>
+                                    <p>Essentials — це професійна команда, яка допомогла нам у вирішенні складного питання, яке стосувалось фінансів. Компанії в які ми звертались не змогли забезпечити нам потрібного результату, але не Essentials. Рекомендуємо до співпраці</p>
+                                    <cite>
+                                        <span class="initials">Олександр Шажко</span>
+                                        <span class="position">Директор ПП “Електротранс”</span>
+                                    </cite>
+                                </blockquote>
+                            </div>
+                            <div class="swiper-slide">
+                                <blockquote>
+                                    <p>Essentials — це професійна команда, яка допомогла нам у вирішенні складного питання, яке стосувалось фінансів. Компанії в які ми звертались не змогли забезпечити нам потрібного результату, але не Essentials. Рекомендуємо до співпраці</p>
+                                    <cite>
+                                        <span class="initials">Олександр Шажко</span>
+                                        <span class="position">Директор ПП “Електротранс”</span>
+                                    </cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <!--/ Slides -->
+                    </div>
+                </div>
+            </section>
+            <!-- / .testimonials -->
+            <section class="contacts" id="contacts">
+                <div class="container">
+                    <div class="map" id="map"></div>
+                    <div class="contacts-info">
+                        <h2 class="section-title">Контакти</h2>
+                        <div class="address">
+                            <h5>Адреса</h5>
+                            <address>
+                                <p>вул. Жиляньска 96, м. Київ</p>
+                            </address>
+                        </div>
+                        <div class="contact-phones">
+                            <h5>Контакти</h5>
+                            <ul>
+                                <li><a href="tel:380675512416">+38 (067) 551 24 16</a></li>
+                                <li><a href="tel:380675512416">+38 (067) 551 24 16</a></li>
+                                <li><a href="tel:380675512416">+38 (067) 551 24 16</a></li>
+                            </ul>
+                        </div>
+                        <div class="schedule">
+                            <h5>Графік роботи</h5>
+                            <ul>
+                                <li>Пн-Пт: <time datetime="2013-04-06T13:53" >09:00 — 18:00</time></li>
+                                <li>Cб-Нд: Вихідні</li>
+                            </ul>
+                        </div>
+                        <ul class="socials">
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+							</li>
+							<li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- / .content -->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-row">
+                    <div class="footer-box">
+                        <a href="#" class="logo">
+                            <div class="lazyload-img">
+                                <img data-src="images/logo.svg" src="#" alt="image description" loading="lazy" class="lazyload" />
+                            </div>
+                        </a>
+                        <p><strong>ESSENTIAL</strong> — українська юридична фірма, що надає послуги в різних сферах бізнес-права компаніям та приватним особам.</p>
+                    </div>
+                    <div class="footer-box">
+                        <div class="address">
+                            <h5>Адреса</h5>
+                            <address>
+                                <p>вул. Жиляньска 96, м. Київ</p>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="footer-box">
+                        <div class="contact-phones">
+                            <h5>Контакти</h5>
+                            <ul>
+                                <li><a href="tel:380675512416">+38 (067) 551 24 16</a></li>
+                                <li><a href="tel:380675512416">+38 (067) 551 24 16</a></li>
+                                <li><a href="tel:380675512416">+38 (067) 551 24 16</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-box">
+                        <div class="schedule">
+                            <h5>Графік роботи</h5>
+                            <ul>
+                                <li>Пн-Пт: <time datetime="2013-04-06T13:53">09:00 — 18:00</time></li>
+                                <li>Cб-Нд: Вихідні</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-box">
+                        <div class="social-media">
+                            <h5>Соціальні мережі</h5>
+                            <ul class="socials">
+                                <li>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-row">
+                    <div class="copy">
+                        <p>&copy; ESSENTIALS, 2020</p>
+                    </div>
+                    <div class="design">
+                        <p>Дизайн та розробка — <span>WebTune</span></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- / footer -->
+        <!--/ #footer -->
+    </div>
+    <!-- / .wrapper -->
 </body>
-</html>
