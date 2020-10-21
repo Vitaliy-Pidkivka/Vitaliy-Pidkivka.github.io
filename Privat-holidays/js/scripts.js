@@ -255,8 +255,8 @@
             $input.on("click", function () {
                 $this.addClass("active");
                 $this.append($(".ui-datepicker"))
-                // $this.append($datepicker);
-                // $datepicker.remove();
+                $this.append($datepicker);
+                $datepicker.remove();
             });
             $this.focusout(function(){
                 $this.removeClass('active')
